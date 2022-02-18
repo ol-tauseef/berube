@@ -53,6 +53,11 @@ body, html {
   width: 50%;
 }
 
+header, footer, section {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .section-title {
   position: relative;
 }
@@ -124,6 +129,166 @@ h2.title {
   font-weight: bold;
 }
 
+/*Hero*/
+section.ol-hero {
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+section.ol-hero .content-area {
+  z-index: 3;
+}
+
+section.ol-hero .content-area h2.title, section.ol-hero .content-area h3.title {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 90px;
+  line-height: 108px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+section.ol-hero .content-area h3.title {
+  margin-left: 82px;
+}
+
+section.ol-hero .content-area span {
+  font-weight: normal;
+}
+
+section.ol-hero .slider-content-area {
+  background: #fff;
+  width: 435px;
+  height: 320px;
+  padding: 20px 34px 34px 34px;
+  text-align: center;
+  margin-top: 127px;
+  margin-right: 289px;
+}
+
+section.ol-hero .slider-content-area h3.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #7CC24D;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+section.ol-hero .slider-content-area p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}
+
+section.ol-hero .slider-content-area .rm-button {
+  margin-top: 47px;
+}
+
+section.ol-hero .slider-content-area .rm-button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.5rem;
+  text-align: center;
+  background-color: #373737;
+  padding: 0.8125rem 1.5625rem;
+}
+
+section.ol-hero .image.half-column {
+  z-index: 3;
+}
+
+section.ol-hero .slider-thumb {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+section.ol-hero .slider-thumb .thumb-img img {
+  margin: 0 8px;
+  width: 96px;
+  height: 90px;
+}
+
+section.ol-hero .social {
+  background: #ffffff;
+  width: 60px;
+  height: 290px;
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  bottom: 0;
+  content: "";
+  z-index: 2;
+  margin: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  padding: 10px 15px;
+}
+
+section.ol-hero .social .twitter {
+  background-position: 33.3%;
+}
+
+section.ol-hero .social .youtube {
+  background-position: 66.6%;
+}
+
+section.ol-hero .social .reddit {
+  background-position: 100%;
+}
+
+section.ol-hero .social a {
+  background: url(../images/social-sprite.png);
+  display: block;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 36px;
+  margin-top: 18px;
+}
+
+section.ol-hero .hero-wrapper {
+  background-color: #7CC24D;
+  position: relative;
+}
+
+section.ol-hero .hero-wrapper:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background: #595959;
+  height: 100%;
+  z-index: 2;
+  max-width: 24%;
+}
+
+section.ol-hero .hero-wrapper:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background: #373737;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  max-width: 61%;
+  z-index: 1;
+}
+
+section.ol-hero .hero-wrapper .container {
+  padding: 0;
+}
+
 /*Service Section*/
 .ol-services {
   padding: 70px 0 65px 0;
@@ -136,6 +301,7 @@ h2.title {
 
 .ol-services span.service-left-bg {
   top: -4%;
+  z-index: 2;
 }
 
 .ol-services span.service-right-bg {
@@ -190,8 +356,57 @@ h2.title {
 
 /*Intro Section*/
 .ol-intro {
-  background: #f5f5f5;
+  background: url(../images/intro-bg.png) #f5f5f5;
   padding: 110px 0;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.ol-intro .container {
+  padding: 0;
+}
+
+.ol-intro .d-flex {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.ol-intro .text-section {
+  padding-left: 180px;
+}
+
+.ol-intro .text-wrapper {
+  position: relative;
+  padding-left: 70px;
+}
+
+.ol-intro .text-wrapper::before {
+  background: url(http://127.0.0.1:5500/assets/images/tick.png);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  left: 26px;
+}
+
+.ol-intro .text-wrapper h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  margin: 0 0 5px 0;
+}
+
+.ol-intro .text-wrapper p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+  color: #000000;
 }
 
 .ol-intro h3.title {
@@ -211,6 +426,30 @@ h2.title {
   font-size: 20px;
   line-height: 24px;
   color: #595959;
+}
+
+.ol-intro .border-wrapper {
+  background-color: #7CC24D;
+  position: relative;
+  height: 25px;
+}
+
+.ol-intro .border-wrapper::before {
+  position: absolute;
+  content: "";
+  background: #595959;
+  width: 27%;
+  height: 100%;
+  margin: auto;
+  z-index: 1;
+}
+
+.ol-intro .border-wrapper::after {
+  content: "";
+  position: absolute;
+  background: #373737;
+  width: 57.5%;
+  height: 100%;
 }
 
 /*About Section*/
@@ -484,7 +723,6 @@ section.ol-booking input[type="submit"] {
 
 /*Footer*/
 footer {
-  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -612,82 +850,82 @@ h3.widget-title {
 }
 
 /*
-@media(min-width:320px){
-    .container {
-        @include container();
-        padding: 2rem;
-    }
-    .ol-logo-nav {
-        @include row-two-column();
-        justify-content: space-between;
-        .logo {
-            @include half-column();
+    @media(min-width:320px){
+        .container {
+            @include container();
+            padding: 2rem;
         }
-        .menu {
-            @include half-column();
+        .ol-logo-nav {
+            @include row-two-column();
+            justify-content: space-between;
+            .logo {
+                @include half-column();
+            }
+            .menu {
+                @include half-column();
+            }
         }
+        .ol-logo-nav .menu label {
+            display:flex;
+    flex-direction:column;
+    width:70px;
+    align-items: flex-end;
+    cursor:pointer;
+    span{
+        background: $blackColor;
+        border-radius:10px;
+        height:7px;
+        margin: 7px 0;
+        transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
     }
-    .ol-logo-nav .menu label {
-        display:flex;
-  flex-direction:column;
-  width:70px;
-  align-items: flex-end;
-  cursor:pointer;
-  span{
-    background: $blackColor;
-    border-radius:10px;
-    height:7px;
-    margin: 7px 0;
-    transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
-  }
-  span:nth-of-type(1){
-    width:50%;
-    
-  }
-  
-  span:nth-of-type(2){
-    width:100%;
-  }
-  
-  
-  span:nth-of-type(3){
-    width:75%;
-   
-  }
-  
-  
-  input[type="checkbox"]{
-    display:none;
-  }
-  
-  
-  input[type="checkbox"]:checked ~ span:nth-of-type(1){
-    transform-origin:bottom;
-    transform:rotatez(45deg) translate(-12px,22px)
-  }
-  
-  
-  input[type="checkbox"]:checked ~ span:nth-of-type(2){
-    
-    transform-origin:top;
-    transform:rotatez(-45deg)
-  }
-  
-  
-  input[type="checkbox"]:checked ~ span:nth-of-type(3){
-    
-    transform-origin:bottom;
-    width:50%;
-    transform: translate(0px,-12px) rotatez(45deg);
-  
-  }
-
+    span:nth-of-type(1){
+        width:50%;
+        
     }
-    .ol-logo-nav {
-        .img-logo{
-            max-width: 100%;
-        }
+    
+    span:nth-of-type(2){
+        width:100%;
+    }
+    
+    
+    span:nth-of-type(3){
+        width:75%;
+    
+    }
+    
+    
+    input[type="checkbox"]{
+        display:none;
+    }
+    
+    
+    input[type="checkbox"]:checked ~ span:nth-of-type(1){
+        transform-origin:bottom;
+        transform:rotatez(45deg) translate(-12px,22px)
+    }
+    
+    
+    input[type="checkbox"]:checked ~ span:nth-of-type(2){
+        
+        transform-origin:top;
+        transform:rotatez(-45deg)
+    }
+    
+    
+    input[type="checkbox"]:checked ~ span:nth-of-type(3){
+        
+        transform-origin:bottom;
+        width:50%;
+        transform: translate(0px,-12px) rotatez(45deg);
+    
     }
 
-} */
+        }
+        .ol-logo-nav {
+            .img-logo{
+                max-width: 100%;
+            }
+        }
+
+    } */
 /*# sourceMappingURL=custom.css.map */
