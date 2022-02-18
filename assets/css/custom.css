@@ -1,0 +1,693 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+/*Font Variable*/
+/*Color Variable*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, html {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 0.938rem;
+  width: 100%;
+  max-width: 1600px;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row-one-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.row-two-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.half-column {
+  width: 50%;
+}
+
+.section-title {
+  position: relative;
+}
+
+.section-title:before {
+  content: "";
+  position: absolute;
+  background-color: #7CC24D;
+  width: 105px;
+  height: 5px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+h2.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 60px;
+  color: #595959;
+}
+
+/*CSS Start*/
+/*Header Menu*/
+.logo-menu {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+.logo-menu .logo .img-logo {
+  padding: 0.938rem 0;
+}
+
+.main-nav .nav, .footer-nav .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.main-nav .nav li, .footer-nav .nav li {
+  list-style: none;
+  padding: 1.875rem 1.25rem;
+}
+
+.main-nav .nav a, .footer-nav .nav a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+  color: #373737;
+}
+
+.main-nav .nav a.current, .footer-nav .nav a.current {
+  color: #7CC24D;
+  font-weight: bold;
+}
+
+/*Service Section*/
+.ol-services {
+  padding: 70px 0 65px 0;
+  position: relative;
+}
+
+.ol-services span.service-left-bg, .ol-services span.service-right-bg {
+  position: absolute;
+}
+
+.ol-services span.service-left-bg {
+  top: -4%;
+}
+
+.ol-services span.service-right-bg {
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  height: 155px;
+}
+
+.ol-services .services-wrapper .half-column {
+  width: 650px;
+}
+
+.ol-services .services-wrapper h3.title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #595959;
+}
+
+.ol-services .services-wrapper span.dropcap {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 7.5rem;
+  color: #7CC24D;
+}
+
+.ol-services .services-wrapper p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #595959;
+}
+
+.ol-services .services-wrapper .rm-button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.5rem;
+  text-align: center;
+  background-color: #373737;
+  padding: 0.8125rem 1.5625rem;
+}
+
+/*Intro Section*/
+.ol-intro {
+  background: #f5f5f5;
+  padding: 110px 0;
+}
+
+.ol-intro h3.title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
+  color: #595959;
+  width: 505px;
+  margin: 0;
+  margin-bottom: 76px;
+}
+
+.ol-intro p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #595959;
+}
+
+/*About Section*/
+.ol-about {
+  padding: 70px 0 90px 0;
+  position: relative;
+}
+
+.ol-about span.left-bg, .ol-about span.right-bg, .ol-about span.bottom-bg {
+  position: absolute;
+}
+
+.ol-about span.left-bg {
+  top: 4%;
+}
+
+.ol-about span.right-bg {
+  top: -18%;
+  right: 0;
+}
+
+.ol-about span.bottom-bg {
+  bottom: 0;
+  right: 0;
+}
+
+.ol-about .about-wrapper .content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.ol-about .about-wrapper p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #595959;
+}
+
+/*Dietician Section*/
+section.ol-dieticians {
+  background: url("/assets/images/cta-dieticians-bg.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding: 85px 0;
+}
+
+section.ol-dieticians .container {
+  padding: 0;
+}
+
+section.ol-dieticians h4.sub-title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+  color: #ffffff;
+  width: 375px;
+  margin: 0;
+}
+
+section.ol-dieticians h2.title {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 90px;
+  line-height: 108px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #7CC24D;
+  margin-bottom: 35px;
+  margin-top: 0;
+}
+
+section.ol-dieticians .description p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+section.ol-dieticians .rm-button {
+  margin-top: 50px;
+}
+
+section.ol-dieticians .rm-button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.5rem;
+  text-align: center;
+  background-color: #373737;
+  padding: 0.8125rem 1.5625rem;
+}
+
+/*Print Section*/
+.ol-print {
+  padding: 100px 0;
+  background: url("/assets/images/print-center-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.ol-print span {
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  left: 0;
+}
+
+.ol-print .ol-print-wrapper {
+  padding: 0 55px 0 28px;
+}
+
+.ol-print .ol-print-wrapper .description {
+  min-height: 215px;
+  margin-bottom: 24px;
+}
+
+.ol-print .ol-print-wrapper h3.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  color: #7CC24D;
+  margin: 0 0 34px 0;
+}
+
+.ol-print .ol-print-wrapper p, .ol-print .ol-print-wrapper ul {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  color: #595959;
+}
+
+.ol-print .ol-print-wrapper ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ol-print .ol-print-wrapper .rm-button {
+  width: 145px;
+}
+
+.ol-print .ol-print-wrapper .rm-button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.5rem;
+  text-align: center;
+  background-color: #373737;
+  padding: 0.8125rem 1.5625rem;
+}
+
+.ol-print .ol-print-wrapper .half-column.right {
+  margin-left: 245px;
+}
+
+/*Booking Section*/
+section.ol-booking {
+  background: url("/assets/images/cta-booking-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+section.ol-booking span {
+  position: absolute;
+  right: 0;
+  top: -15%;
+}
+
+section.ol-booking .container {
+  padding: 50px 0;
+}
+
+section.ol-booking .form-section {
+  width: 100%;
+  max-width: 610px;
+  margin: 0 auto;
+}
+
+section.ol-booking h4.sub-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #373737;
+  margin: 0;
+}
+
+section.ol-booking h2.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 72px;
+  color: #373737;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+section.ol-booking input[type="text"], section.ol-booking input[type="email"], section.ol-booking input[type="number"], section.ol-booking input[type="textarea"], section.ol-booking textarea {
+  padding: 25px 0px 25px 40px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+section.ol-booking input[type="text"]::-webkit-input-placeholder, section.ol-booking input[type="email"]::-webkit-input-placeholder, section.ol-booking input[type="number"]::-webkit-input-placeholder, section.ol-booking input[type="textarea"]::-webkit-input-placeholder, section.ol-booking textarea::-webkit-input-placeholder {
+  font-style: normal;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #595959;
+}
+
+section.ol-booking input[type="text"]:-ms-input-placeholder, section.ol-booking input[type="email"]:-ms-input-placeholder, section.ol-booking input[type="number"]:-ms-input-placeholder, section.ol-booking input[type="textarea"]:-ms-input-placeholder, section.ol-booking textarea:-ms-input-placeholder {
+  font-style: normal;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #595959;
+}
+
+section.ol-booking input[type="text"]::-ms-input-placeholder, section.ol-booking input[type="email"]::-ms-input-placeholder, section.ol-booking input[type="number"]::-ms-input-placeholder, section.ol-booking input[type="textarea"]::-ms-input-placeholder, section.ol-booking textarea::-ms-input-placeholder {
+  font-style: normal;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #595959;
+}
+
+section.ol-booking input[type="text"]::placeholder, section.ol-booking input[type="email"]::placeholder, section.ol-booking input[type="number"]::placeholder, section.ol-booking input[type="textarea"]::placeholder, section.ol-booking textarea::placeholder {
+  font-style: normal;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #595959;
+}
+
+section.ol-booking textarea {
+  height: 145px;
+}
+
+section.ol-booking input[type="submit"] {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.5rem;
+  text-align: center;
+  background-color: #373737;
+  padding: 0.8125rem 1.5625rem;
+  border: 0;
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+/*Footer*/
+footer {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.content-widget-area.half-column {
+  width: 55%;
+}
+
+.map.half-column {
+  width: 45%;
+}
+
+.footer-wrapper {
+  background-color: #7CC24D;
+  position: relative;
+}
+
+.footer-wrapper:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background: #595959;
+  height: 100%;
+  z-index: 1;
+  max-width: 24%;
+}
+
+.footer-wrapper:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background: #373737;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  max-width: 54%;
+}
+
+.footer-wrapper .container {
+  padding: 0;
+}
+
+.footer-nav .nav {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.footer-nav .nav li {
+  padding: 2.1rem 0.7rem;
+}
+
+.footer-nav .nav a {
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.content-widget-area {
+  z-index: 1;
+}
+
+.content-widget-area .section-2 {
+  padding: 0.938rem 0 0 0;
+}
+
+.footer-logo-area {
+  padding-right: 7.1rem;
+}
+
+.footer-logo-area .description {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+h3.widget-title {
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+.contact p {
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #ffffff;
+}
+
+.contact p a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.copyright p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.copyright p a {
+  text-decoration: none;
+  color: #7CC24D;
+}
+
+.map {
+  padding: 1.188rem 3.125rem;
+}
+
+.map .map-wrapper {
+  position: relative;
+}
+
+.map .map-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.map .map-wrapper:after {
+  content: '';
+  display: block;
+  padding-bottom: 66%;
+}
+
+/*
+@media(min-width:320px){
+    .container {
+        @include container();
+        padding: 2rem;
+    }
+    .ol-logo-nav {
+        @include row-two-column();
+        justify-content: space-between;
+        .logo {
+            @include half-column();
+        }
+        .menu {
+            @include half-column();
+        }
+    }
+    .ol-logo-nav .menu label {
+        display:flex;
+  flex-direction:column;
+  width:70px;
+  align-items: flex-end;
+  cursor:pointer;
+  span{
+    background: $blackColor;
+    border-radius:10px;
+    height:7px;
+    margin: 7px 0;
+    transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+  span:nth-of-type(1){
+    width:50%;
+    
+  }
+  
+  span:nth-of-type(2){
+    width:100%;
+  }
+  
+  
+  span:nth-of-type(3){
+    width:75%;
+   
+  }
+  
+  
+  input[type="checkbox"]{
+    display:none;
+  }
+  
+  
+  input[type="checkbox"]:checked ~ span:nth-of-type(1){
+    transform-origin:bottom;
+    transform:rotatez(45deg) translate(-12px,22px)
+  }
+  
+  
+  input[type="checkbox"]:checked ~ span:nth-of-type(2){
+    
+    transform-origin:top;
+    transform:rotatez(-45deg)
+  }
+  
+  
+  input[type="checkbox"]:checked ~ span:nth-of-type(3){
+    
+    transform-origin:bottom;
+    width:50%;
+    transform: translate(0px,-12px) rotatez(45deg);
+  
+  }
+
+    }
+    .ol-logo-nav {
+        .img-logo{
+            max-width: 100%;
+        }
+    }
+
+} */
+/*# sourceMappingURL=custom.css.map */
