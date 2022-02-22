@@ -122,6 +122,12 @@ h2.title {
   line-height: 1.5rem;
   text-decoration: none;
   color: #373737;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main-nav .nav a:hover, .footer-nav .nav a:hover {
+  color: #7CC24D;
 }
 
 .main-nav .nav a.current, .footer-nav .nav a.current {
@@ -133,7 +139,6 @@ h2.title {
 section.ol-hero {
   margin: 0 auto;
   position: relative;
-  padding-bottom: 25px;
 }
 
 section.ol-hero .content-area {
@@ -188,7 +193,11 @@ section.ol-hero .slider-content-area p {
 }
 
 section.ol-hero .slider-content-area .rm-button {
-  margin-top: 47px;
+  max-width: 150px;
+  width: 100%;
+  display: block;
+  margin-top: 47px !important;
+  margin: 0 auto;
 }
 
 section.ol-hero .slider-content-area .rm-button a {
@@ -203,20 +212,230 @@ section.ol-hero .slider-content-area .rm-button a {
   padding: 0.8125rem 1.5625rem;
 }
 
+section.ol-hero .slider-content-area .rm-button a:hover {
+  background-color: #7CC24D;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
 section.ol-hero .image.half-column {
   z-index: 3;
 }
 
+section.ol-hero .image.half-column .image-wrapper {
+  position: relative;
+  max-width: 95%;
+}
+
+section.ol-hero .image.half-column .image-wrapper img {
+  width: 100%;
+}
+
+section.ol-hero .image.half-column .orbit-1 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  height: 115%;
+  width: 115%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -8%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto;
+}
+
+section.ol-hero .image.half-column .orbit-1::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: #7CC24D;
+  border-radius: 100px;
+  top: 155px;
+  left: 88px;
+}
+
+section.ol-hero .image.half-column .orbit-2 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  height: 140%;
+  width: 140%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -20%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: auto;
+}
+
+section.ol-hero .image.half-column .orbit-2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: #7CC24D;
+  border-radius: 100px;
+  bottom: 300px;
+  left: 42px;
+}
+
+section.ol-hero .image.half-column .orbit-3 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  height: 158%;
+  width: 158%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -30%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: auto;
+}
+
+section.ol-hero .image.half-column .orbit-3::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: #7CC24D;
+  background: #ffffff !important;
+  border-radius: 100px;
+  top: 200px;
+  right: 138px;
+}
+
 section.ol-hero .slider-thumb {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  width: 280px;
+  height: 120px;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  z-index: 9;
 }
 
 section.ol-hero .slider-thumb .thumb-img img {
   margin: 0 8px;
   width: 96px;
   height: 90px;
+}
+
+section.ol-hero .box-nav {
+  background: #ffffff;
+  width: 120px;
+  height: 60px;
+  position: absolute;
+  left: 587px;
+  bottom: 314px;
+  content: "";
+  z-index: 3;
+  margin: 0;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+section.ol-hero .box-nav img {
+  background: #fff;
+}
+
+section.ol-hero .box-nav img:hover {
+  background-color: #7CC24D;
+}
+
+section.ol-hero .box-nav img:active {
+  background-color: #7CC24D;
+}
+
+section.ol-hero .number-nav {
+  width: 45px;
+  height: 35px;
+  position: absolute;
+  left: 688px;
+  bottom: 80px;
+  z-index: 3;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+section.ol-hero .number-nav a {
+  text-decoration: none;
+}
+
+section.ol-hero .number-nav .seperator {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+section.ol-hero .number-nav .active-nav a {
+  color: #7CC24D;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+section.ol-hero .number-nav .de-active-nav a {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+section.ol-hero .bullets {
+  width: 160px;
+  height: 20px;
+  position: absolute;
+  left: 660px;
+  bottom: 50px;
+  z-index: 3;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.ol-hero .bullets::after {
+  content: "";
+  background: #ffffff;
+  position: absolute;
+  width: 95px;
+  height: 2px;
+  left: 38px;
+  z-index: 0;
+}
+
+section.ol-hero .bullets a.active {
+  background: url("../images/bullet-active.png");
+  width: 21px;
+  height: 21px;
+}
+
+section.ol-hero .bullets a {
+  background: url("../images/bullet-disabled.png");
+  width: 21px;
+  height: 21px;
 }
 
 section.ol-hero .social {
@@ -228,7 +447,7 @@ section.ol-hero .social {
   top: 50%;
   bottom: 0;
   content: "";
-  z-index: 2;
+  z-index: 4;
   margin: 0;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -239,11 +458,23 @@ section.ol-hero .social .twitter {
   background-position: 33.3%;
 }
 
+section.ol-hero .social .twitter:hover {
+  background-position: 33.3%;
+}
+
 section.ol-hero .social .youtube {
   background-position: 66.6%;
 }
 
+section.ol-hero .social .youtube:hover {
+  background-position: 66.6%;
+}
+
 section.ol-hero .social .reddit {
+  background-position: 100%;
+}
+
+section.ol-hero .social .reddit:hover {
   background-position: 100%;
 }
 
@@ -254,6 +485,10 @@ section.ol-hero .social a {
   width: 30px;
   margin-bottom: 36px;
   margin-top: 18px;
+}
+
+section.ol-hero .social a:hover {
+  background: url(../images/social-hover-sprite.png);
 }
 
 section.ol-hero .hero-wrapper {
@@ -286,7 +521,7 @@ section.ol-hero .hero-wrapper:after {
 }
 
 section.ol-hero .hero-wrapper .container {
-  padding: 0;
+  padding: 100px 0;
 }
 
 /*Service Section*/
@@ -331,6 +566,7 @@ section.ol-hero .hero-wrapper .container {
   font-size: 6rem;
   line-height: 7.5rem;
   color: #7CC24D;
+  margin-right: 10px;
 }
 
 .ol-services .services-wrapper p {
@@ -340,6 +576,13 @@ section.ol-hero .hero-wrapper .container {
   font-size: 20px;
   line-height: 24px;
   color: #595959;
+}
+
+.ol-services .services-wrapper .rm-button {
+  max-width: 150px;
+  width: 100%;
+  display: block;
+  max-width: 175px;
 }
 
 .ol-services .services-wrapper .rm-button a {
@@ -352,6 +595,12 @@ section.ol-hero .hero-wrapper .container {
   text-align: center;
   background-color: #373737;
   padding: 0.8125rem 1.5625rem;
+}
+
+.ol-services .services-wrapper .rm-button a:hover {
+  background-color: #7CC24D;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 /*Intro Section*/
@@ -532,6 +781,9 @@ section.ol-dieticians .description p {
 }
 
 section.ol-dieticians .rm-button {
+  max-width: 150px;
+  width: 100%;
+  display: block;
   margin-top: 50px;
 }
 
@@ -545,6 +797,12 @@ section.ol-dieticians .rm-button a {
   text-align: center;
   background-color: #373737;
   padding: 0.8125rem 1.5625rem;
+}
+
+section.ol-dieticians .rm-button a:hover {
+  background-color: #7CC24D;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 /*Print Section*/
@@ -569,7 +827,7 @@ section.ol-dieticians .rm-button a {
 
 .ol-print .ol-print-wrapper .description {
   min-height: 215px;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 .ol-print .ol-print-wrapper h3.title {
@@ -595,6 +853,9 @@ section.ol-dieticians .rm-button a {
 }
 
 .ol-print .ol-print-wrapper .rm-button {
+  max-width: 150px;
+  width: 100%;
+  display: block;
   width: 145px;
 }
 
@@ -608,6 +869,12 @@ section.ol-dieticians .rm-button a {
   text-align: center;
   background-color: #373737;
   padding: 0.8125rem 1.5625rem;
+}
+
+.ol-print .ol-print-wrapper .rm-button a:hover {
+  background-color: #7CC24D;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .ol-print .ol-print-wrapper .half-column.right {
@@ -773,7 +1040,7 @@ footer {
 }
 
 .footer-nav .nav li {
-  padding: 2.1rem 0.7rem;
+  padding: 2.1rem 0.938rem;
 }
 
 .footer-nav .nav a {
@@ -787,10 +1054,15 @@ footer {
 
 .content-widget-area .section-2 {
   padding: 0.938rem 0 0 0;
+  margin-top: 5px;
 }
 
 .footer-logo-area {
-  padding-right: 7.1rem;
+  padding-right: 8.18rem;
+}
+
+.footer-logo-area .logo {
+  margin-bottom: 34px;
 }
 
 .footer-logo-area .description {
@@ -800,9 +1072,18 @@ footer {
   line-height: 1.5rem;
 }
 
+.footer-logo-area .description p {
+  margin: 0;
+}
+
 h3.widget-title {
   color: #ffffff;
   font-size: 1.25rem;
+}
+
+.contact {
+  max-width: 330px;
+  width: 100%;
 }
 
 .contact p {
@@ -810,11 +1091,30 @@ h3.widget-title {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #ffffff;
+  margin: 0;
+  margin-bottom: 4px;
 }
 
-.contact p a {
+.contact p.phone-tel {
+  margin-top: 24px;
+}
+
+.contact p.address {
+  max-width: 195px;
+  width: 100%;
+}
+
+.contact p.email {
+  margin-bottom: 0;
+}
+
+.contact a {
   color: #ffffff;
   text-decoration: none;
+}
+
+.copyright {
+  margin-top: 84px;
 }
 
 .copyright p {
@@ -824,13 +1124,19 @@ h3.widget-title {
   color: #ffffff;
 }
 
-.copyright p a {
+.copyright a {
   text-decoration: none;
   color: #7CC24D;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.copyright a:hover {
+  color: #ffffff;
 }
 
 .map {
-  padding: 1.188rem 3.125rem;
+  padding: 3rem 2.25rem;
 }
 
 .map .map-wrapper {
