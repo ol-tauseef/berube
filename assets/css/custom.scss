@@ -64,9 +64,10 @@
             text-align: center;
             background-color: $secondaryColor;
             padding: 0.8125rem 1.5625rem;
+            transition: 0.4s;
             &:hover {
                 background-color: $primaryColor;
-                transition: 0.4s;
+                
             }
             
             }
@@ -113,7 +114,7 @@
             
         font-style: normal;
         font-weight: bold;
-        font-size: 50px;
+        font-size: 3.125rem;
         line-height: 60px;
         color: $textColor
             }
@@ -177,6 +178,7 @@
     section.ol-hero {
             margin: 0 auto;
             position: relative;
+            overflow: hidden;
         
 
         .content-area {
@@ -185,7 +187,7 @@
             h2.title, h3.title {
                 font-weight: 300;
                 font-style: italic;
-                font-size: 90px;
+                font-size: 5.625rem;
                 line-height: 108px;
                 color: #FFFFFF;
                 margin: 0;
@@ -210,7 +212,7 @@
             h3.title {              
 font-style: normal;
 font-weight: bold;
-font-size: 30px;
+font-size: 1.875rem;
 line-height: 36px;
 color: $primaryColor;
 margin: 0;
@@ -221,7 +223,7 @@ margin-bottom: 35px;
                 
 font-style: normal;
 font-weight: 300;
-font-size: 20px;
+font-size: 1.25rem;
 line-height: 24px;
 text-align: center;
 color: $blackColor;
@@ -239,7 +241,7 @@ margin: 0;
             
             .image-wrapper {
                 position: relative;
-                max-width: 95%;
+                max-width: 90%;
                 img {
                     width: 100%;
                 }
@@ -247,9 +249,9 @@ margin: 0;
             .orbit-1 {
                 content: "";
     position: absolute;
-    border-radius: 50%;
-    height: 115%;
-    width: 115%;
+    border-radius: 840px;
+    height: 840px;
+    width: 840px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -261,7 +263,7 @@ margin: 0;
     &::before {@include circle-green();
         border-radius: 100px;
         top: 155px;
-        left: 88px;
+        left: 79px;
     }
 
 
@@ -270,33 +272,33 @@ margin: 0;
             .orbit-2 {
                 content: "";
     position: absolute;
-    border-radius: 50%;
-    height: 140%;
-    width: 140%;
+    border-radius: 1010px;
+    height: 1010px;
+    width: 1010px;
     top: 0;
     right: 0;
     bottom: 0;
-    left: -20%;
+    left: -18%;
     border: 1px solid rgba(255, 255, 255, 0.3);
     margin: auto;
 
     &::before {@include circle-green();
         border-radius: 100px;
         bottom: 300px;
-    left: 42px;
+    left: 32px;
 
     }
             }
             .orbit-3 {
                 content: "";
     position: absolute;
-    border-radius: 50%;
-    height: 158%;
-    width: 158%;
+    border-radius: 1180px;
+    height: 1180px;
+    width: 1180px;
     top: 0;
     right: 0;
     bottom: 0;
-    left: -30%;
+    left: -29%;
     border: 1px solid rgba(255, 255, 255, 0.2);
     margin: auto;
 
@@ -305,7 +307,7 @@ margin: 0;
         background: $whiteColor !important;
         border-radius: 100px;
         top: 200px;
-    right: 138px;
+    right: 132px;
         }
     
             }
@@ -328,11 +330,10 @@ margin: 0;
         }
         .box-nav {
             background: #ffffff;
-            width: 120px;
             height: 60px;
             position: absolute;
             left: 587px;
-            bottom: 314px;
+            bottom: 389px;
             content: "";
             z-index: 3;
             margin: 0;
@@ -341,15 +342,22 @@ margin: 0;
             justify-content: space-around;
             align-items: center;
             cursor: pointer;
+            a {
+                padding: 15px;
+    display: block;
+    transition: 0.4s;
+    &:hover {
+        background-color: $primaryColor;
+    }
+    &:active {
+        background-color: $primaryColor;
+    }
+            }
             img {
-                background: #fff;
+                max-width: 100%;
+                display: block;
                
-                &:hover {
-                    background-color: $primaryColor;
-                }
-                &:active {
-                    background-color: $primaryColor;
-                }
+               
             }
         }
         .number-nav {
@@ -368,7 +376,7 @@ margin: 0;
     .seperator {
         font-style: normal;
         font-weight: normal;
-        font-size: 30px;
+        font-size: 1.875rem;
         line-height: 36px; 
         color: $whiteColor; 
     }
@@ -377,7 +385,7 @@ margin: 0;
             color: $primaryColor;  
             font-style: normal;
 font-weight: normal;
-font-size: 30px;
+font-size: 1.875rem;
 line-height: 36px;       
         }
     }
@@ -386,7 +394,7 @@ line-height: 36px;
             color: $whiteColor;     
             font-style: normal;
 font-weight: 300;
-font-size: 20px;
+font-size: 1.25rem;
 line-height: 24px;       
         }
     }
@@ -435,8 +443,12 @@ line-height: 24px;
         margin: 0;
         transform: translate(0, -50%);
         padding: 10px 15px;
+        .facebook {
+            transition: 0.4s;
+        }
         .twitter {
             background-position: 33.3%;
+            transition: 0.4s;
 
             &:hover {
                 background-position: 33.3%;
@@ -444,12 +456,14 @@ line-height: 24px;
         }
         .youtube {
             background-position: 66.6%;
+            transition: 0.4s;
             &:hover {
                 background-position: 66.6%;
             }
         }
         .reddit {
             background-position: 100%;
+            transition: 0.4s;
             &:hover {
                 background-position: 100%;
             }
@@ -525,15 +539,22 @@ line-height: 24px;
             bottom: 0;
             height: 155px;
         }
+        .row-two-column.content {
+            margin-top: 105px;
+            margin-bottom: 80px;
+        }
     .services-wrapper{
-        .half-column {width: 650px;}
+        .column-2 {
+            margin-left: 70px;
+        }
     h3.title {
         font-family: Lato;
         font-style: normal;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 1.875rem;
         line-height: 36px;    
         color: $textColor;
+        margin-bottom: 45px;
     }
     span.dropcap{
     @include dropcap();
@@ -542,9 +563,11 @@ line-height: 24px;
         font-family: Lato;
         font-style: normal;
         font-weight: 300;
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 24px;    
-        color: $textColor
+        color: $textColor;
+        margin:0;
+        max-width: 650px;
     }
     .rm-button {
         @include button();
@@ -555,14 +578,67 @@ line-height: 24px;
     /*Intro Section*/
     .ol-intro {
         background: url(../images/intro-bg.png) #f5f5f5;
-        padding: 110px 0;
+        padding: 65px 0 0 0;
         background-repeat: no-repeat;
-        background-position: top center;
+        background-position: 52% 0;
+        overflow: hidden;
         .container {
             padding: 0;
         }
         .d-flex {
             align-items: end;
+        }
+        .img-section {
+            position: relative ;
+            .image-wrapper {
+                z-index: 4;
+                img {
+                    display: block;
+    max-width: 100%;
+                }
+            }
+            .semi-circle-1 {
+    width: 715px;
+    height: 715px;
+    position: absolute;
+    background: $textColor;
+    z-index: 3;
+    position: absolute;
+    top: 108%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    border-radius: 715px;
+}
+
+.semi-circle-2 {
+    width: 990px;
+height: 990px;
+position: absolute;
+background: $secondaryColor;
+z-index: 2;
+position: absolute;
+top: 108%;
+left: 47%;
+transform: translate(-50%, -50%);
+border-radius: 990px;
+}
+
+.semi-circle-3 {
+    width: 1140px;
+height: 1140px;
+position: absolute;
+background: rgba(55, 55, 55, 0.05);
+z-index: 1;
+position: absolute;
+top: 108%;
+left: 47%;
+transform: translate(-50%, -50%);
+border-radius: 1140px;
+}
+
+            }
+
+
         }
         .text-section {
             padding-left: 180px;
@@ -570,9 +646,11 @@ line-height: 24px;
         .text-wrapper {
             position: relative;
             padding-left: 70px;
+            padding-bottom: 12px;
+            z-index: 4;
             &::before 
                 {
-                    background: url(http://127.0.0.1:5500/assets/images/tick.png);
+                    background: url(../images/tick.png);
                     width: 30px;
                     height: 30px;
                     position: absolute;
@@ -584,34 +662,33 @@ line-height: 24px;
             h3 {
             font-style: normal;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.563rem;
     line-height: 30px;
-    color: $blackColor;
+    color: $whiteColor;
     margin: 0 0 5px 0;}
     p {
         
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 24px;
     margin: 0;
-    color: #000000;
+    color: $whiteColor;
     }
         }
         h3.title {
             font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 48px;
     color: $textColor;
-    width: 505px;
     margin: 0;
     margin-bottom: 76px;    }
         p {
             
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 24px;
     color: $textColor
         }
@@ -619,6 +696,7 @@ line-height: 24px;
             background-color: $primaryColor;
             position: relative;
             height: 25px;
+            z-index: 2;
 
             &::before {
                 position: absolute;
@@ -638,7 +716,7 @@ line-height: 24px;
 
             }
         }
-    }
+    
 
 
     /*About Section*/
@@ -654,6 +732,7 @@ line-height: 24px;
         span.right-bg {
             top: -18%;
         right: 0;
+        z-index: 2;
         }
         span.bottom-bg {
             bottom: 0;
@@ -669,7 +748,7 @@ line-height: 24px;
     p {
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 24px;
     text-align: center;
     color: #595959;
@@ -689,7 +768,7 @@ line-height: 24px;
     h4.sub-title {
     font-style: normal;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 48px;
     color: $whiteColor;
     width: 375px;
@@ -699,7 +778,7 @@ line-height: 24px;
         h2.title {
     font-weight: 300;
     font-style: normal;
-    font-size: 90px;
+    font-size: 5.625rem;
     line-height: 108px;
     letter-spacing: 0.3em;
     text-transform: uppercase;
@@ -710,7 +789,7 @@ line-height: 24px;
         
         .description p{
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 24px;
     color: $blackColor;
         }
@@ -745,7 +824,7 @@ line-height: 24px;
         h3.title {
             font-style: normal;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 48px;
     color: $primaryColor;
     margin: 0 0 34px 0;
@@ -754,7 +833,7 @@ line-height: 24px;
     p, ul {
         font-style: normal;
         font-weight: 300;
-        font-size: 30px;
+        font-size: 1.875rem;
         line-height: 36px;
         color: $textColor;
         }
@@ -805,7 +884,7 @@ line-height: 24px;
         h2.title {
             font-style: normal;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 3.75rem;
     line-height: 72px;
     color: $secondaryColor;
     margin: 0;
@@ -817,17 +896,21 @@ line-height: 24px;
                 padding: 25px 0px 25px 40px;
                 margin: 10px 0;
                 width: 100%;
+                background: transparent;
+                border: 1px solid #000;
+                font-family: $lato;
+                font-weight: 300;
+                font-size: 1.25rem;
+                line-height: 24px;
+                color: $textColor;
             &::placeholder {
                 font-style: normal;
-                font-family: $lato;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
-    color: $textColor;
+               
             }
         }
-        textarea {height: 145px;}
+        textarea {height: 145px;background: transparent;}
         input[type="submit"] {
+            font-family: $lato;
             color: #ffffff;
             text-decoration: none;
             font-size: 1.25rem;
@@ -842,6 +925,11 @@ line-height: 24px;
             margin-right: 0;
             margin-left: auto;
             margin-top: 20px;
+            cursor: pointer;
+            transition: 0.4s;
+            &:hover {
+                background-color: $primaryColor;
+            }
         }
     
     }
@@ -917,12 +1005,13 @@ line-height: 24px;
             margin-bottom: 34px;
         }
     .description {
-        color: $whiteColor;
+        
         font-size: 1.25rem;
         font-weight: 300;
         line-height: 1.5rem;
         p {
             margin: 0;
+            color: $whiteColor;
         }
     }
 }
@@ -965,9 +1054,11 @@ line-height: 24px;
 
     .copyright
     {
-        margin-top: 84px;
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
     p {
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 22px;
         font-weight: 300;
         color: $whiteColor;}
@@ -1000,85 +1091,33 @@ line-height: 24px;
     }
 
 
+/*Media Queries*/    
+
+@media(max-width:320px) {
 
 
+    /*Service Section*/  
 
-    /*
-    @media(min-width:320px){
-        .container {
-            @include container();
-            padding: 2rem;
-        }
-        .ol-logo-nav {
-            @include row-two-column();
-            justify-content: space-between;
-            .logo {
-                @include half-column();
+   .ol-services {
+        max-width: 320px;
+        .services-wrapper {
+            
+            .row-two-column {
+                flex-direction: column;
             }
-            .menu {
-                @include half-column();
-            }
-        }
-        .ol-logo-nav .menu label {
-            display:flex;
-    flex-direction:column;
-    width:70px;
-    align-items: flex-end;
-    cursor:pointer;
-    span{
-        background: $blackColor;
-        border-radius:10px;
-        height:7px;
-        margin: 7px 0;
-        transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
-    }
-    span:nth-of-type(1){
-        width:50%;
-        
-    }
-    
-    span:nth-of-type(2){
-        width:100%;
-    }
-    
-    
-    span:nth-of-type(3){
-        width:75%;
-    
-    }
-    
-    
-    input[type="checkbox"]{
-        display:none;
-    }
-    
-    
-    input[type="checkbox"]:checked ~ span:nth-of-type(1){
-        transform-origin:bottom;
-        transform:rotatez(45deg) translate(-12px,22px)
-    }
-    
-    
-    input[type="checkbox"]:checked ~ span:nth-of-type(2){
-        
-        transform-origin:top;
-        transform:rotatez(-45deg)
-    }
-    
-    
-    input[type="checkbox"]:checked ~ span:nth-of-type(3){
-        
-        transform-origin:bottom;
-        width:50%;
-        transform: translate(0px,-12px) rotatez(45deg);
-    
-    }
-
-        }
-        .ol-logo-nav {
-            .img-logo{
-                max-width: 100%;
+            .half-column {
+                width: 100%;
+                h3.title {
+                    margin-bottom: 30px;
+                    text-align: center;
+                    span.dropcap {
+                        display: block;
+                    }
+                }
             }
         }
-
-    } */
+        .services-wrapper > :last-child {
+            margin-top: 20px;
+        }
+    }
+}

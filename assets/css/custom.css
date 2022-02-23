@@ -78,7 +78,7 @@ header, footer, section {
 h2.title {
   font-style: normal;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 60px;
   color: #595959;
 }
@@ -139,6 +139,7 @@ h2.title {
 section.ol-hero {
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 }
 
 section.ol-hero .content-area {
@@ -148,7 +149,7 @@ section.ol-hero .content-area {
 section.ol-hero .content-area h2.title, section.ol-hero .content-area h3.title {
   font-weight: 300;
   font-style: italic;
-  font-size: 90px;
+  font-size: 5.625rem;
   line-height: 108px;
   color: #FFFFFF;
   margin: 0;
@@ -175,7 +176,7 @@ section.ol-hero .slider-content-area {
 section.ol-hero .slider-content-area h3.title {
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 36px;
   color: #7CC24D;
   margin: 0;
@@ -185,7 +186,7 @@ section.ol-hero .slider-content-area h3.title {
 section.ol-hero .slider-content-area p {
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 24px;
   text-align: center;
   color: #000000;
@@ -210,12 +211,12 @@ section.ol-hero .slider-content-area .rm-button a {
   text-align: center;
   background-color: #373737;
   padding: 0.8125rem 1.5625rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 section.ol-hero .slider-content-area .rm-button a:hover {
   background-color: #7CC24D;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
 section.ol-hero .image.half-column {
@@ -224,7 +225,7 @@ section.ol-hero .image.half-column {
 
 section.ol-hero .image.half-column .image-wrapper {
   position: relative;
-  max-width: 95%;
+  max-width: 90%;
 }
 
 section.ol-hero .image.half-column .image-wrapper img {
@@ -234,9 +235,9 @@ section.ol-hero .image.half-column .image-wrapper img {
 section.ol-hero .image.half-column .orbit-1 {
   content: "";
   position: absolute;
-  border-radius: 50%;
-  height: 115%;
-  width: 115%;
+  border-radius: 840px;
+  height: 840px;
+  width: 840px;
   top: 0;
   right: 0;
   bottom: 0;
@@ -256,19 +257,19 @@ section.ol-hero .image.half-column .orbit-1::before {
   background: #7CC24D;
   border-radius: 100px;
   top: 155px;
-  left: 88px;
+  left: 79px;
 }
 
 section.ol-hero .image.half-column .orbit-2 {
   content: "";
   position: absolute;
-  border-radius: 50%;
-  height: 140%;
-  width: 140%;
+  border-radius: 1010px;
+  height: 1010px;
+  width: 1010px;
   top: 0;
   right: 0;
   bottom: 0;
-  left: -20%;
+  left: -18%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   margin: auto;
 }
@@ -282,19 +283,19 @@ section.ol-hero .image.half-column .orbit-2::before {
   background: #7CC24D;
   border-radius: 100px;
   bottom: 300px;
-  left: 42px;
+  left: 32px;
 }
 
 section.ol-hero .image.half-column .orbit-3 {
   content: "";
   position: absolute;
-  border-radius: 50%;
-  height: 158%;
-  width: 158%;
+  border-radius: 1180px;
+  height: 1180px;
+  width: 1180px;
   top: 0;
   right: 0;
   bottom: 0;
-  left: -30%;
+  left: -29%;
   border: 1px solid rgba(255, 255, 255, 0.2);
   margin: auto;
 }
@@ -309,7 +310,7 @@ section.ol-hero .image.half-column .orbit-3::before {
   background: #ffffff !important;
   border-radius: 100px;
   top: 200px;
-  right: 138px;
+  right: 132px;
 }
 
 section.ol-hero .slider-thumb {
@@ -330,11 +331,10 @@ section.ol-hero .slider-thumb .thumb-img img {
 
 section.ol-hero .box-nav {
   background: #ffffff;
-  width: 120px;
   height: 60px;
   position: absolute;
   left: 587px;
-  bottom: 314px;
+  bottom: 389px;
   content: "";
   z-index: 3;
   margin: 0;
@@ -348,16 +348,24 @@ section.ol-hero .box-nav {
   cursor: pointer;
 }
 
+section.ol-hero .box-nav a {
+  padding: 15px;
+  display: block;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+section.ol-hero .box-nav a:hover {
+  background-color: #7CC24D;
+}
+
+section.ol-hero .box-nav a:active {
+  background-color: #7CC24D;
+}
+
 section.ol-hero .box-nav img {
-  background: #fff;
-}
-
-section.ol-hero .box-nav img:hover {
-  background-color: #7CC24D;
-}
-
-section.ol-hero .box-nav img:active {
-  background-color: #7CC24D;
+  max-width: 100%;
+  display: block;
 }
 
 section.ol-hero .number-nav {
@@ -381,7 +389,7 @@ section.ol-hero .number-nav a {
 section.ol-hero .number-nav .seperator {
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 36px;
   color: #ffffff;
 }
@@ -390,7 +398,7 @@ section.ol-hero .number-nav .active-nav a {
   color: #7CC24D;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 36px;
 }
 
@@ -398,7 +406,7 @@ section.ol-hero .number-nav .de-active-nav a {
   color: #ffffff;
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 24px;
 }
 
@@ -454,8 +462,15 @@ section.ol-hero .social {
   padding: 10px 15px;
 }
 
+section.ol-hero .social .facebook {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
 section.ol-hero .social .twitter {
   background-position: 33.3%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 section.ol-hero .social .twitter:hover {
@@ -464,6 +479,8 @@ section.ol-hero .social .twitter:hover {
 
 section.ol-hero .social .youtube {
   background-position: 66.6%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 section.ol-hero .social .youtube:hover {
@@ -472,6 +489,8 @@ section.ol-hero .social .youtube:hover {
 
 section.ol-hero .social .reddit {
   background-position: 100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 section.ol-hero .social .reddit:hover {
@@ -547,17 +566,23 @@ section.ol-hero .hero-wrapper .container {
   height: 155px;
 }
 
-.ol-services .services-wrapper .half-column {
-  width: 650px;
+.ol-services .row-two-column.content {
+  margin-top: 105px;
+  margin-bottom: 80px;
+}
+
+.ol-services .services-wrapper .column-2 {
+  margin-left: 70px;
 }
 
 .ol-services .services-wrapper h3.title {
   font-family: Lato;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 36px;
   color: #595959;
+  margin-bottom: 45px;
 }
 
 .ol-services .services-wrapper span.dropcap {
@@ -573,9 +598,11 @@ section.ol-hero .hero-wrapper .container {
   font-family: Lato;
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 24px;
   color: #595959;
+  margin: 0;
+  max-width: 650px;
 }
 
 .ol-services .services-wrapper .rm-button {
@@ -595,20 +622,21 @@ section.ol-hero .hero-wrapper .container {
   text-align: center;
   background-color: #373737;
   padding: 0.8125rem 1.5625rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .ol-services .services-wrapper .rm-button a:hover {
   background-color: #7CC24D;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
 /*Intro Section*/
 .ol-intro {
   background: url(../images/intro-bg.png) #f5f5f5;
-  padding: 110px 0;
+  padding: 65px 0 0 0;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: 52% 0;
+  overflow: hidden;
 }
 
 .ol-intro .container {
@@ -621,17 +649,74 @@ section.ol-hero .hero-wrapper .container {
           align-items: end;
 }
 
-.ol-intro .text-section {
+.ol-intro .img-section {
+  position: relative;
+}
+
+.ol-intro .img-section .image-wrapper {
+  z-index: 4;
+}
+
+.ol-intro .img-section .image-wrapper img {
+  display: block;
+  max-width: 100%;
+}
+
+.ol-intro .img-section .semi-circle-1 {
+  width: 715px;
+  height: 715px;
+  position: absolute;
+  background: #595959;
+  z-index: 3;
+  position: absolute;
+  top: 108%;
+  left: 47%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 715px;
+}
+
+.ol-intro .img-section .semi-circle-2 {
+  width: 990px;
+  height: 990px;
+  position: absolute;
+  background: #373737;
+  z-index: 2;
+  position: absolute;
+  top: 108%;
+  left: 47%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 990px;
+}
+
+.ol-intro .img-section .semi-circle-3 {
+  width: 1140px;
+  height: 1140px;
+  position: absolute;
+  background: rgba(55, 55, 55, 0.05);
+  z-index: 1;
+  position: absolute;
+  top: 108%;
+  left: 47%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 1140px;
+}
+
+.text-section {
   padding-left: 180px;
 }
 
-.ol-intro .text-wrapper {
+.text-wrapper {
   position: relative;
   padding-left: 70px;
+  padding-bottom: 12px;
+  z-index: 4;
 }
 
-.ol-intro .text-wrapper::before {
-  background: url(http://127.0.0.1:5500/assets/images/tick.png);
+.text-wrapper::before {
+  background: url(../images/tick.png);
   width: 30px;
   height: 30px;
   position: absolute;
@@ -640,50 +725,50 @@ section.ol-hero .hero-wrapper .container {
   left: 26px;
 }
 
-.ol-intro .text-wrapper h3 {
+.text-wrapper h3 {
   font-style: normal;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 1.563rem;
   line-height: 30px;
-  color: #000000;
+  color: #ffffff;
   margin: 0 0 5px 0;
 }
 
-.ol-intro .text-wrapper p {
+.text-wrapper p {
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 24px;
   margin: 0;
-  color: #000000;
+  color: #ffffff;
 }
 
-.ol-intro h3.title {
+h3.title {
   font-style: normal;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 48px;
   color: #595959;
-  width: 505px;
   margin: 0;
   margin-bottom: 76px;
 }
 
-.ol-intro p {
+p {
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 24px;
   color: #595959;
 }
 
-.ol-intro .border-wrapper {
+.border-wrapper {
   background-color: #7CC24D;
   position: relative;
   height: 25px;
+  z-index: 2;
 }
 
-.ol-intro .border-wrapper::before {
+.border-wrapper::before {
   position: absolute;
   content: "";
   background: #595959;
@@ -693,7 +778,7 @@ section.ol-hero .hero-wrapper .container {
   z-index: 1;
 }
 
-.ol-intro .border-wrapper::after {
+.border-wrapper::after {
   content: "";
   position: absolute;
   background: #373737;
@@ -718,6 +803,7 @@ section.ol-hero .hero-wrapper .container {
 .ol-about span.right-bg {
   top: -18%;
   right: 0;
+  z-index: 2;
 }
 
 .ol-about span.bottom-bg {
@@ -733,7 +819,7 @@ section.ol-hero .hero-wrapper .container {
 .ol-about .about-wrapper p {
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 24px;
   text-align: center;
   color: #595959;
@@ -754,7 +840,7 @@ section.ol-dieticians .container {
 section.ol-dieticians h4.sub-title {
   font-style: normal;
   font-weight: 800;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 48px;
   color: #ffffff;
   width: 375px;
@@ -764,7 +850,7 @@ section.ol-dieticians h4.sub-title {
 section.ol-dieticians h2.title {
   font-weight: 300;
   font-style: normal;
-  font-size: 90px;
+  font-size: 5.625rem;
   line-height: 108px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -775,7 +861,7 @@ section.ol-dieticians h2.title {
 
 section.ol-dieticians .description p {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 24px;
   color: #000000;
 }
@@ -797,12 +883,12 @@ section.ol-dieticians .rm-button a {
   text-align: center;
   background-color: #373737;
   padding: 0.8125rem 1.5625rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 section.ol-dieticians .rm-button a:hover {
   background-color: #7CC24D;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
 /*Print Section*/
@@ -833,7 +919,7 @@ section.ol-dieticians .rm-button a:hover {
 .ol-print .ol-print-wrapper h3.title {
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 48px;
   color: #7CC24D;
   margin: 0 0 34px 0;
@@ -842,7 +928,7 @@ section.ol-dieticians .rm-button a:hover {
 .ol-print .ol-print-wrapper p, .ol-print .ol-print-wrapper ul {
   font-style: normal;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 36px;
   color: #595959;
 }
@@ -869,12 +955,12 @@ section.ol-dieticians .rm-button a:hover {
   text-align: center;
   background-color: #373737;
   padding: 0.8125rem 1.5625rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .ol-print .ol-print-wrapper .rm-button a:hover {
   background-color: #7CC24D;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
 .ol-print .ol-print-wrapper .half-column.right {
@@ -918,7 +1004,7 @@ section.ol-booking h4.sub-title {
 section.ol-booking h2.title {
   font-style: normal;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 3.75rem;
   line-height: 72px;
   color: #373737;
   margin: 0;
@@ -929,49 +1015,38 @@ section.ol-booking input[type="text"], section.ol-booking input[type="email"], s
   padding: 25px 0px 25px 40px;
   margin: 10px 0;
   width: 100%;
+  background: transparent;
+  border: 1px solid #000;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 24px;
+  color: #595959;
 }
 
 section.ol-booking input[type="text"]::-webkit-input-placeholder, section.ol-booking input[type="email"]::-webkit-input-placeholder, section.ol-booking input[type="number"]::-webkit-input-placeholder, section.ol-booking input[type="textarea"]::-webkit-input-placeholder, section.ol-booking textarea::-webkit-input-placeholder {
   font-style: normal;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 24px;
-  color: #595959;
 }
 
 section.ol-booking input[type="text"]:-ms-input-placeholder, section.ol-booking input[type="email"]:-ms-input-placeholder, section.ol-booking input[type="number"]:-ms-input-placeholder, section.ol-booking input[type="textarea"]:-ms-input-placeholder, section.ol-booking textarea:-ms-input-placeholder {
   font-style: normal;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 24px;
-  color: #595959;
 }
 
 section.ol-booking input[type="text"]::-ms-input-placeholder, section.ol-booking input[type="email"]::-ms-input-placeholder, section.ol-booking input[type="number"]::-ms-input-placeholder, section.ol-booking input[type="textarea"]::-ms-input-placeholder, section.ol-booking textarea::-ms-input-placeholder {
   font-style: normal;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 24px;
-  color: #595959;
 }
 
 section.ol-booking input[type="text"]::placeholder, section.ol-booking input[type="email"]::placeholder, section.ol-booking input[type="number"]::placeholder, section.ol-booking input[type="textarea"]::placeholder, section.ol-booking textarea::placeholder {
   font-style: normal;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 24px;
-  color: #595959;
 }
 
 section.ol-booking textarea {
   height: 145px;
+  background: transparent;
 }
 
 section.ol-booking input[type="submit"] {
+  font-family: "Lato", sans-serif;
   color: #ffffff;
   text-decoration: none;
   font-size: 1.25rem;
@@ -986,6 +1061,13 @@ section.ol-booking input[type="submit"] {
   margin-right: 0;
   margin-left: auto;
   margin-top: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+section.ol-booking input[type="submit"]:hover {
+  background-color: #7CC24D;
 }
 
 /*Footer*/
@@ -1066,7 +1148,6 @@ footer {
 }
 
 .footer-logo-area .description {
-  color: #ffffff;
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.5rem;
@@ -1074,6 +1155,7 @@ footer {
 
 .footer-logo-area .description p {
   margin: 0;
+  color: #ffffff;
 }
 
 h3.widget-title {
@@ -1114,11 +1196,13 @@ h3.widget-title {
 }
 
 .copyright {
-  margin-top: 84px;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
 }
 
 .copyright p {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 22px;
   font-weight: 300;
   color: #ffffff;
@@ -1155,83 +1239,30 @@ h3.widget-title {
   padding-bottom: 66%;
 }
 
-/*
-    @media(min-width:320px){
-        .container {
-            @include container();
-            padding: 2rem;
-        }
-        .ol-logo-nav {
-            @include row-two-column();
-            justify-content: space-between;
-            .logo {
-                @include half-column();
-            }
-            .menu {
-                @include half-column();
-            }
-        }
-        .ol-logo-nav .menu label {
-            display:flex;
-    flex-direction:column;
-    width:70px;
-    align-items: flex-end;
-    cursor:pointer;
-    span{
-        background: $blackColor;
-        border-radius:10px;
-        height:7px;
-        margin: 7px 0;
-        transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
-    }
-    span:nth-of-type(1){
-        width:50%;
-        
-    }
-    
-    span:nth-of-type(2){
-        width:100%;
-    }
-    
-    
-    span:nth-of-type(3){
-        width:75%;
-    
-    }
-    
-    
-    input[type="checkbox"]{
-        display:none;
-    }
-    
-    
-    input[type="checkbox"]:checked ~ span:nth-of-type(1){
-        transform-origin:bottom;
-        transform:rotatez(45deg) translate(-12px,22px)
-    }
-    
-    
-    input[type="checkbox"]:checked ~ span:nth-of-type(2){
-        
-        transform-origin:top;
-        transform:rotatez(-45deg)
-    }
-    
-    
-    input[type="checkbox"]:checked ~ span:nth-of-type(3){
-        
-        transform-origin:bottom;
-        width:50%;
-        transform: translate(0px,-12px) rotatez(45deg);
-    
-    }
-
-        }
-        .ol-logo-nav {
-            .img-logo{
-                max-width: 100%;
-            }
-        }
-
-    } */
+/*Media Queries*/
+@media (max-width: 320px) {
+  /*Service Section*/
+  .ol-services {
+    max-width: 320px;
+  }
+  .ol-services .services-wrapper .row-two-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ol-services .services-wrapper .half-column {
+    width: 100%;
+  }
+  .ol-services .services-wrapper .half-column h3.title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .ol-services .services-wrapper .half-column h3.title span.dropcap {
+    display: block;
+  }
+  .ol-services .services-wrapper > :last-child {
+    margin-top: 20px;
+  }
+}
 /*# sourceMappingURL=custom.css.map */
