@@ -1093,6 +1093,312 @@ border-radius: 1140px;
 
 /*Media Queries*/    
 
+
+@media(max-width:1366px) {
+
+
+    /*Service Section*/  
+
+   .ol-services {
+        max-width: 1366px;
+        .services-wrapper {
+           
+            padding: 0 20px;
+            
+            .row-two-column.content {
+                margin: 0;
+            }
+           .column-2 {
+               margin-left: 0;
+           }
+            .half-column {
+                margin: 0 20px;
+                
+                h3.title {
+                    margin: 30px 0;
+                   
+                    font-size: 1.75rem;
+                    span.dropcap {
+                        display: block;
+                        font-size: 4.5rem;
+                        line-height: 6rem;
+                    }
+                }
+            }
+            p {
+                max-width: 650px;
+            }
+        }
+        .services-wrapper > :last-child {
+            margin-top: 60px;
+        }
+    }
+}
+
+
+@media(max-width:1280px) {
+
+
+    /*Service Section*/  
+
+   .ol-services {
+        max-width: 1280px;
+        .services-wrapper {
+           
+            padding: 0 20px;
+            
+            .row-two-column.content {
+                margin: 0;
+            }
+           .column-2 {
+               margin-left: 0;
+           }
+            .half-column {
+                margin: 0 20px;
+                
+                h3.title {
+                    margin: 30px 0;
+                   
+                    font-size: 1.75rem;
+                    span.dropcap {
+                        display: block;
+                        font-size: 4.5rem;
+                        line-height: 6rem;
+                    }
+                }
+            }
+            p {
+                max-width: 650px;
+            }
+        }
+        .services-wrapper > :last-child {
+            margin-top: 60px;
+        }
+    }
+}
+
+
+@media(max-width:1024px) {
+
+
+    /*Service Section*/  
+
+   .ol-services {
+        max-width: 1024px;
+        .services-wrapper {
+           
+            padding: 0 20px;
+            
+            .row-two-column.content {
+                margin: 0;
+            }
+           .column-2 {
+               margin-left: 0;
+           }
+            .half-column {
+                margin: 0 20px;
+                
+                h3.title {
+                    margin: 30px 0;
+                   
+                    font-size: 1.75rem;
+                    span.dropcap {
+                        display: block;
+                        font-size: 4.5rem;
+                        line-height: 6rem;
+                    }
+                }
+            }
+            p {
+                max-width: 650px;
+            }
+        }
+        .services-wrapper > :last-child {
+            margin-top: 60px;
+        }
+    }
+}
+
+
+
+@media(max-width:990px) {
+
+
+    /*Service Section*/  
+
+   .ol-services {
+        max-width: 990px;
+        .services-wrapper {
+            text-align: center;
+            padding: 0 20px;
+            .row-two-column {
+                flex-direction: column;
+                
+            }
+            .row-two-column.content {
+                margin: 0;
+            }
+           .column-2 {
+               margin-left: 0;
+           }
+            .half-column {
+                width: 100%;
+                
+                h3.title {
+                    margin: 30px 0;
+                    text-align: center;
+                    font-size: 1.5rem;
+                    span.dropcap {
+                        display: block;
+                        font-size: 3.5rem;
+                        line-height: 4.5rem;
+                    }
+                }
+            }
+            p {
+                max-width: 990px;
+            }
+        }
+        .services-wrapper > :last-child {
+            margin-top: 60px;
+        }
+    }
+}
+
+
+
+@media(max-width:767px) {
+
+
+    /*Service Section*/  
+
+   .ol-services {
+        max-width: 767px;
+        .services-wrapper {
+            text-align: center;
+            padding: 0 20px;
+            .row-two-column {
+                flex-direction: column;
+                
+            }
+            .row-two-column.content {
+                margin: 0;
+            }
+           .column-2 {
+               margin-left: 0;
+           }
+            .half-column {
+                width: 100%;
+                
+                h3.title {
+                    margin: 30px 0;
+                    text-align: center;
+                    font-size: 1.5rem;
+                    span.dropcap {
+                        display: block;
+                        font-size: 3.5rem;
+                        line-height: 4.5rem;
+                    }
+                }
+            }
+            p {
+                max-width: 767px;
+            }
+        }
+        .services-wrapper > :last-child {
+            margin-top: 60px;
+        }
+    }
+}
+
+
+
+
+@media(max-width:640px) {
+
+
+    /*Service Section*/  
+
+   .ol-services {
+        max-width: 640px;
+        .services-wrapper {
+            text-align: center;
+            padding: 0 20px;
+            .row-two-column {
+                flex-direction: column;
+                
+            }
+            .row-two-column.content {
+                margin: 0;
+            }
+           .column-2 {
+               margin-left: 0;
+           }
+            .half-column {
+                width: 100%;
+                
+                h3.title {
+                    margin: 30px 0;
+                    text-align: center;
+                    font-size: 1.5rem;
+                    span.dropcap {
+                        display: block;
+                        font-size: 3.5rem;
+                        line-height: 4.5rem;
+                    }
+                }
+            }
+        }
+        .services-wrapper > :last-child {
+            margin-top: 60px;
+        }
+    }
+}
+
+
+
+@media(max-width:480px) {
+
+
+    /*Service Section*/  
+
+   .ol-services {
+        max-width: 480px;
+        .services-wrapper {
+            text-align: center;
+            padding: 0 18px;
+            .row-two-column {
+                flex-direction: column;
+                
+            }
+            .row-two-column.content {
+                margin: 0;
+            }
+           .column-2 {
+               margin-left: 0;
+           }
+            .half-column {
+                width: 100%;
+                
+                h3.title {
+                    margin: 30px 0;
+                    text-align: center;
+                    font-size: 1.5rem;
+                    span.dropcap {
+                        display: block;
+                        font-size: 3.5rem;
+                        line-height: 4.5rem;
+                    }
+                }
+            }
+        }
+        .services-wrapper > :last-child {
+            margin-top: 40px;
+        }
+    }
+}
+
+
 @media(max-width:320px) {
 
 
@@ -1101,12 +1407,24 @@ border-radius: 1140px;
    .ol-services {
         max-width: 320px;
         .services-wrapper {
-            
+            text-align: center;
+            padding: 0 15px;
             .row-two-column {
                 flex-direction: column;
+                
             }
+            .row-two-column.content {
+                margin: 0;
+            }
+            span.dropcap {
+                margin: 0;
+            }
+           .column-2 {
+               margin-left: 0;
+           }
             .half-column {
                 width: 100%;
+                
                 h3.title {
                     margin-bottom: 30px;
                     text-align: center;
@@ -1117,7 +1435,7 @@ border-radius: 1140px;
             }
         }
         .services-wrapper > :last-child {
-            margin-top: 20px;
+            margin-top: 40px;
         }
     }
 }
