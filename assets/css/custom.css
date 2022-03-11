@@ -1287,6 +1287,14 @@ h3.widget-title {
   .ol-about .about-wrapper .content {
     width: 100%;
   }
+  /* Dieticians Section*/
+  section.ol-dieticians {
+    padding: 40px;
+    background-size: cover;
+  }
+  section.ol-dieticians h2.title {
+    font-size: 5.25rem;
+  }
   /*PrInt Section*/
   .ol-print {
     max-width: 1919px;
@@ -1426,6 +1434,14 @@ h3.widget-title {
   .ol-about .about-wrapper .content {
     width: 100%;
   }
+  /* Dieticians Section*/
+  section.ol-dieticians {
+    padding: 40px;
+    background-size: cover;
+  }
+  section.ol-dieticians h2.title {
+    font-size: 5.25rem;
+  }
   /*PrInt Section*/
   .ol-print {
     max-width: 1440px;
@@ -1501,6 +1517,14 @@ h3.widget-title {
   }
   .ol-about .about-wrapper .content {
     width: 100%;
+  }
+  /* Dieticians Section*/
+  section.ol-dieticians {
+    padding: 40px;
+    background-size: cover;
+  }
+  section.ol-dieticians h2.title {
+    font-size: 5.25rem;
   }
   /*PrInt Section*/
   .ol-print {
@@ -1578,6 +1602,14 @@ h3.widget-title {
   .ol-about .about-wrapper .content {
     width: 100%;
   }
+  /* Dieticians Section*/
+  section.ol-dieticians {
+    padding: 40px;
+    background-size: cover;
+  }
+  section.ol-dieticians h2.title {
+    font-size: 4.25rem;
+  }
   /*PrInt Section*/
   .ol-print {
     max-width: 1280px;
@@ -1609,6 +1641,20 @@ h3.widget-title {
   }
   .ol-print .ol-print-wrapper .rm-button a {
     display: block;
+  }
+  /*Booking Section*/
+  .ol-booking {
+    max-width: 1280px;
+    padding: 0 20px;
+  }
+  .ol-booking h2.title {
+    font-size: 2.75rem !important;
+  }
+  .ol-booking .ol-booking-wrapper .half-column.blank {
+    width: 50%;
+  }
+  .ol-booking .ol-booking-wrapper .form-section {
+    width: 80%;
   }
 }
 
@@ -1654,6 +1700,14 @@ h3.widget-title {
   .ol-about .about-wrapper .content {
     width: 100%;
   }
+  /* Dieticians Section*/
+  section.ol-dieticians {
+    padding: 40px;
+    background-size: cover;
+  }
+  section.ol-dieticians h2.title {
+    font-size: 4.25rem;
+  }
   /*PrInt Section*/
   .ol-print {
     max-width: 1024px;
@@ -1685,6 +1739,20 @@ h3.widget-title {
   }
   .ol-print .ol-print-wrapper .rm-button a {
     display: block;
+  }
+  /*Booking Section*/
+  .ol-booking {
+    max-width: 1024px;
+    padding: 0 20px;
+  }
+  .ol-booking h2.title {
+    font-size: 2.75rem !important;
+  }
+  .ol-booking input[type="submit"] {
+    margin: 0 auto !important;
+  }
+  .ol-booking .ol-booking-wrapper .half-column.blank {
+    width: auto;
   }
 }
 
@@ -1738,6 +1806,14 @@ h3.widget-title {
   .ol-about .about-wrapper .content {
     width: 100%;
   }
+  /* Dieticians Section*/
+  section.ol-dieticians {
+    padding: 40px;
+    background-size: cover;
+  }
+  section.ol-dieticians h2.title {
+    font-size: 4.25rem;
+  }
   /*PrInt Section*/
   .ol-print {
     max-width: 990px;
@@ -1779,6 +1855,20 @@ h3.widget-title {
   }
   .ol-print .ol-print-wrapper .rm-button a {
     display: block;
+  }
+  /*Booking Section*/
+  .ol-booking {
+    max-width: 990px;
+    padding: 0 20px;
+  }
+  .ol-booking h2.title {
+    font-size: 2.75rem !important;
+  }
+  .ol-booking input[type="submit"] {
+    margin: 0 auto !important;
+  }
+  .ol-booking .ol-booking-wrapper .half-column.blank {
+    width: auto;
   }
 }
 
@@ -1832,6 +1922,51 @@ h3.widget-title {
   .ol-about .about-wrapper .content {
     width: 100%;
   }
+  /*Dieticians Section*/
+  .ol-dieticians {
+    background-position: 100% !important;
+    padding: 30px 0 !important;
+    max-width: 767px;
+    text-align: center;
+    position: relative;
+    background-size: cover !important;
+    z-index: 0;
+    position: relative;
+  }
+  .ol-dieticians:before {
+    content: "";
+    background: #000000;
+    opacity: 0.4;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: -1;
+  }
+  .ol-dieticians .ol-dietitians-wrapper .half-column {
+    width: 100%;
+  }
+  .ol-dieticians .ol-dietitians-wrapper .half-column h2.title {
+    font-size: 2.25rem;
+    color: #ffffff;
+  }
+  .ol-dieticians .ol-dietitians-wrapper .half-column p {
+    color: #ffffff;
+  }
+  .ol-dieticians .ol-dietitians-wrapper .half-column.blank {
+    width: auto;
+  }
+  .ol-dieticians h4.sub-title {
+    font-size: 2.25rem !important;
+    margin: 0 auto !important;
+    color: #ffffff !important;
+  }
+  .ol-dieticians .rm-button {
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
   /*PrInt Section*/
   .ol-print {
     max-width: 767px;
@@ -1873,6 +2008,20 @@ h3.widget-title {
   }
   .ol-print .ol-print-wrapper .rm-button a {
     display: block;
+  }
+  /*Booking Section*/
+  .ol-booking {
+    max-width: 767px;
+    padding: 0 20px;
+  }
+  .ol-booking h2.title {
+    font-size: 2.75rem !important;
+  }
+  .ol-booking input[type="submit"] {
+    margin: 0 auto !important;
+  }
+  .ol-booking .ol-booking-wrapper .half-column.blank {
+    width: auto;
   }
 }
 
@@ -1923,6 +2072,51 @@ h3.widget-title {
   .ol-about .about-wrapper .content {
     width: 100%;
   }
+  /*Dieticians Section*/
+  .ol-dieticians {
+    background-position: 100% !important;
+    padding: 30px 0 !important;
+    max-width: 640px;
+    text-align: center;
+    position: relative;
+    background-size: cover !important;
+    z-index: 0;
+    position: relative;
+  }
+  .ol-dieticians:before {
+    content: "";
+    background: #000000;
+    opacity: 0.4;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: -1;
+  }
+  .ol-dieticians .ol-dietitians-wrapper .half-column {
+    width: 100%;
+  }
+  .ol-dieticians .ol-dietitians-wrapper .half-column h2.title {
+    font-size: 2.25rem;
+    color: #ffffff;
+  }
+  .ol-dieticians .ol-dietitians-wrapper .half-column p {
+    color: #ffffff;
+  }
+  .ol-dieticians .ol-dietitians-wrapper .half-column.blank {
+    width: auto;
+  }
+  .ol-dieticians h4.sub-title {
+    font-size: 2.25rem !important;
+    margin: 0 auto !important;
+    color: #ffffff !important;
+  }
+  .ol-dieticians .rm-button {
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
   /*PrInt Section*/
   .ol-print {
     max-width: 640px;
@@ -1965,6 +2159,20 @@ h3.widget-title {
   .ol-print .ol-print-wrapper .rm-button a {
     display: block;
   }
+  /*Booking Section*/
+  .ol-booking {
+    max-width: 640px;
+    padding: 0 20px;
+  }
+  .ol-booking h2.title {
+    font-size: 2.75rem !important;
+  }
+  .ol-booking input[type="submit"] {
+    margin: 0 auto !important;
+  }
+  .ol-booking .ol-booking-wrapper .half-column.blank {
+    width: auto;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2004,15 +2212,116 @@ h3.widget-title {
   .ol-services .services-wrapper > :last-child {
     margin-top: 40px;
   }
+  /*Intro Section*/
+  .ol-intro {
+    overflow: hidden;
+    background: #f5f5f5;
+    padding: 0;
+  }
+  .ol-intro .border-wrapper {
+    height: 15px;
+  }
+  .ol-intro .row-two-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ol-intro .row-two-column .img-section {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+  }
+  .ol-intro .row-two-column .img-section .text-wrapper {
+    padding: 12px 0px 12px 80px;
+    width: 100%;
+  }
+  .ol-intro .row-two-column .img-section .text-wrapper::before {
+    left: 30px;
+    top: 35%;
+  }
+  .ol-intro .row-two-column .img-section .text-wrapper h3 {
+    font-size: 1.25rem;
+  }
+  .ol-intro .row-two-column .img-section .text-wrapper p {
+    font-size: 1.2rem;
+  }
+  .ol-intro .row-two-column .text-section {
+    width: 100%;
+    padding: 20px;
+  }
+  .ol-intro .row-two-column .text-section h3.title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.75rem;
+    line-height: 35px;
+    color: #595959;
+    margin: 0;
+  }
   /*About Section*/
   .ol-about {
     max-width: 480px;
+  }
+  .ol-about span.right-bg {
+    top: -95px;
+    right: -10px;
+  }
+  .ol-about span.right-bg img {
+    width: 150px;
   }
   .ol-about .about-wrapper {
     text-align: center;
   }
   .ol-about .about-wrapper .content {
     width: 100%;
+  }
+  /*Dieticians Section*/
+  .ol-dieticians {
+    background-position: 100% !important;
+    padding: 30px 0 !important;
+    max-width: 480px;
+    text-align: center;
+    position: relative;
+    background-size: cover !important;
+    z-index: 0;
+    position: relative;
+  }
+  .ol-dieticians:before {
+    content: "";
+    background: #000000;
+    opacity: 0.4;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: -1;
+  }
+  .ol-dieticians .ol-dietitians-wrapper .half-column {
+    width: 100%;
+  }
+  .ol-dieticians .ol-dietitians-wrapper .half-column h2.title {
+    font-size: 2.25rem;
+    color: #ffffff;
+  }
+  .ol-dieticians .ol-dietitians-wrapper .half-column p {
+    color: #ffffff;
+  }
+  .ol-dieticians .ol-dietitians-wrapper .half-column.blank {
+    width: auto;
+  }
+  .ol-dieticians h4.sub-title {
+    font-size: 2.25rem !important;
+    width: auto !important;
+    color: #ffffff !important;
+  }
+  .ol-dieticians .rm-button {
+    margin: 0 auto;
+    padding-bottom: 30px;
   }
   /*PrInt Section*/
   .ol-print {
@@ -2055,6 +2364,20 @@ h3.widget-title {
   }
   .ol-print .ol-print-wrapper .rm-button a {
     display: block;
+  }
+  /*Booking Section*/
+  .ol-booking {
+    max-width: 480px;
+    padding: 0 20px;
+  }
+  .ol-booking h2.title {
+    font-size: 2.75rem !important;
+  }
+  .ol-booking input[type="submit"] {
+    margin: 0 auto !important;
+  }
+  .ol-booking .ol-booking-wrapper .half-column.blank {
+    width: auto;
   }
 }
 
@@ -2095,6 +2418,54 @@ h3.widget-title {
   .ol-services .services-wrapper > :last-child {
     margin-top: 40px;
   }
+  /*Intro Section*/
+  .ol-intro {
+    overflow: hidden;
+    background: #f5f5f5;
+    padding: 0;
+  }
+  .ol-intro .border-wrapper {
+    height: 15px;
+  }
+  .ol-intro .row-two-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ol-intro .row-two-column .img-section {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+  }
+  .ol-intro .row-two-column .img-section .text-wrapper {
+    padding: 12px 0px 12px 80px;
+  }
+  .ol-intro .row-two-column .img-section .text-wrapper::before {
+    left: 30px;
+    top: 35%;
+  }
+  .ol-intro .row-two-column .img-section .text-wrapper h3 {
+    font-size: 1.25rem;
+  }
+  .ol-intro .row-two-column .img-section .text-wrapper p {
+    font-size: 1.2rem;
+  }
+  .ol-intro .row-two-column .text-section {
+    width: 100%;
+    padding: 20px;
+  }
+  .ol-intro .row-two-column .text-section h3.title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.75rem;
+    line-height: 35px;
+    color: #595959;
+    margin: 0;
+  }
   /*About Section*/
   .ol-about {
     max-width: 320px;
@@ -2111,48 +2482,6 @@ h3.widget-title {
   }
   .ol-about .about-wrapper .content {
     width: 100%;
-  }
-  /*PrInt Section*/
-  .ol-print {
-    max-width: 320px;
-  }
-  .ol-print .ol-print-wrapper {
-    padding: 0 20px 0 20px;
-  }
-  .ol-print .ol-print-wrapper .row-two-column {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .ol-print .ol-print-wrapper .row-two-column .half-column {
-    width: 100%;
-  }
-  .ol-print .ol-print-wrapper .row-two-column .half-column.right {
-    margin-left: 0;
-    margin-top: 40px;
-  }
-  .ol-print .ol-print-wrapper h3.title {
-    font-size: 2rem;
-    text-align: center;
-  }
-  .ol-print .ol-print-wrapper .description {
-    margin-bottom: 0;
-    min-height: auto;
-  }
-  .ol-print .ol-print-wrapper p, .ol-print .ol-print-wrapper ul {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1.25rem;
-    line-height: 24px;
-    text-align: center;
-    color: #595959;
-  }
-  .ol-print .ol-print-wrapper .rm-button {
-    margin: 0 auto;
-  }
-  .ol-print .ol-print-wrapper .rm-button a {
-    display: block;
   }
   /*Dieticians Section*/
   .ol-dieticians {
@@ -2199,8 +2528,51 @@ h3.widget-title {
     margin: 0 auto;
     padding-bottom: 30px;
   }
+  /*PrInt Section*/
+  .ol-print {
+    max-width: 320px;
+  }
+  .ol-print .ol-print-wrapper {
+    padding: 0 20px 0 20px;
+  }
+  .ol-print .ol-print-wrapper .row-two-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ol-print .ol-print-wrapper .row-two-column .half-column {
+    width: 100%;
+  }
+  .ol-print .ol-print-wrapper .row-two-column .half-column.right {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .ol-print .ol-print-wrapper h3.title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .ol-print .ol-print-wrapper .description {
+    margin-bottom: 0;
+    min-height: auto;
+  }
+  .ol-print .ol-print-wrapper p, .ol-print .ol-print-wrapper ul {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 24px;
+    text-align: center;
+    color: #595959;
+  }
+  .ol-print .ol-print-wrapper .rm-button {
+    margin: 0 auto;
+  }
+  .ol-print .ol-print-wrapper .rm-button a {
+    display: block;
+  }
   /*Booking Section*/
   .ol-booking {
+    max-width: 320px;
     padding: 0 20px;
   }
   .ol-booking h2.title {
@@ -2211,46 +2583,6 @@ h3.widget-title {
   }
   .ol-booking .ol-booking-wrapper .half-column.blank {
     width: auto;
-  }
-  /*Intro Section*/
-  .ol-intro {
-    overflow: hidden;
-    background: #f5f5f5;
-    padding: 0;
-  }
-  .ol-intro .border-wrapper {
-    height: 15px;
-  }
-  .ol-intro .row-two-column {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .ol-intro .row-two-column .img-section {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    overflow: hidden;
-  }
-  .ol-intro .row-two-column .img-section .text-wrapper {
-    padding: 12px 0px 12px 80px;
-  }
-  .ol-intro .row-two-column .img-section .text-wrapper::before {
-    left: 30px;
-    top: 35%;
-  }
-  .ol-intro .row-two-column .img-section .text-wrapper h3 {
-    font-size: 1.25rem;
-  }
-  .ol-intro .row-two-column .img-section .text-wrapper p {
-    font-size: 1.2rem;
-  }
-  .ol-intro .row-two-column .text-section {
-    width: 100%;
-    padding: 0 20px;
   }
 }
 /*# sourceMappingURL=custom.css.map */
