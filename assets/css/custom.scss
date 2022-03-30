@@ -326,7 +326,7 @@ margin: 0;
     right: 0;
     bottom: 0;
     left: -29%;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     margin: auto;
 
     &::before {
@@ -359,7 +359,7 @@ margin: 0;
             background: #ffffff;
             height: 60px;
             position: absolute;
-            left: 587px;
+            left: 31%;
             bottom: 389px;
             content: "";
             z-index: 3;
@@ -600,6 +600,30 @@ line-height: 24px;
         @include button();
         max-width: 175px;
     }
+    .expert {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 126.5px;
+        .section-title {
+            &::before {
+                content: none;
+            }
+        }
+        h2.title {
+            font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+margin: 109px 0 26.5px 0;
+
+
+        }
+        p {
+            max-width: 100%;
+            line-height: 40px;
+        }
+    }
     }
     }
     /*Intro Section*/
@@ -748,13 +772,14 @@ border-radius: 1140px;
 
     /*About Section*/
     .ol-about {
-        padding: 70px 0 90px 0;
+        padding: 70px 0 110px 0;
         position: relative;
         span.left-bg, span.right-bg, span.bottom-bg {
             position: absolute;
         }
         span.left-bg {
             top: 4%;
+            left:2%
         }
         span.right-bg {
             top: -18%;
@@ -762,8 +787,8 @@ border-radius: 1140px;
         z-index: 2;
         }
         span.bottom-bg {
-            bottom: 0;
-        right: 0;
+            bottom: 14%;
+            right: 0.5%;
         }
         
     .about-wrapper {
@@ -776,7 +801,7 @@ border-radius: 1140px;
     font-style: normal;
     font-weight: 300;
     font-size: 1.25rem;
-    line-height: 24px;
+    line-height: 28px;
     text-align: center;
     color: #595959;
     }
@@ -791,6 +816,15 @@ border-radius: 1140px;
         background-repeat: no-repeat;
         background-position: 50% 50%;
         padding: 85px 0;
+        position: relative;
+        &::before {
+            position: absolute;
+    content: "";
+    background: #7CC24D;
+    width: 100%;
+    height: 20px;
+    top: 16px;
+        }
     .container {padding: 0;}
     h4.sub-title {
     font-style: normal;
@@ -817,7 +851,7 @@ border-radius: 1140px;
         .description p{
     font-weight: 300;
     font-size: 1.25rem;
-    line-height: 24px;
+    line-height: 34px;
     color: $blackColor;
         }
         .rm-button {
@@ -1223,13 +1257,98 @@ section.ol-dieticians {
 
 
 
-@media(max-width:1680px) {
+@media (max-width: 1680px) {
 
+    .container {
+        max-width: 1400px;
+    }
+
+/*Hero Section*/
+
+section.ol-hero {
+    .hero-wrapper {
+        .row-two-column {
+            .content-area {
+                .content-title-area {
+                    h2.title, h3.title {
+                        font-size: 4.68rem;
+                    }
+
+                }
+                .slider-content-area {
+                    margin-top: 60px;
+                    width: 410px;
+    height: 315px;
+    padding: 22px 34px 34px 34px;
+    .box-nav {
+        left: 32.6%;
+    bottom: 344px;
+    height: 58px;
+    a {
+        padding: 14px;
+    }
+    }
+                }
+            }
+            .image {
+                .image-wrapper {
+                    img {
+                        max-width: 100%;
+                width: 96%;
+                    }
+                    .orbit-1 {
+                        border-radius: 730px;
+    height: 730px;
+    width: 730px;
+    &::before {
+        top: 115px;
+    left: 84px;
+    width: 13px;
+    height: 13px;
+    }
+                    }
+                    .orbit-2 {
+                        border-radius: 870px;
+    height: 870px;
+    width: 870px;
+    &::before {
+    width: 13px;
+    height: 13px;
+    bottom: 240px;
+    left: 35px;
+    }
+                    }
+                    .orbit-3 {
+                        border-radius: 1000px;
+    height: 1000px;
+    width: 1000px;
+    &::before {
+        top: 155px;
+    right: 124px;
+    width: 13px;
+    height: 13px;
+    }
+                    }
+                }
+            }
+            .slider-thumb {
+                width: 325px;
+               
+            }
+        }
+    }
+    .number-nav {
+        left: 630px;
+    }
+    .bullets {
+        left: 600px;
+    }
+}
 
     /*Service Section*/  
 
     .ol-services {
-        max-width: 1680px;
+       
         .services-wrapper {
            
             padding: 0 20px;
@@ -1244,7 +1363,9 @@ section.ol-dieticians {
            }
             .half-column {
               
-                
+                max-width: 50%;
+    width: 605px;
+
                 h3.title {
                     margin: 30px 0;
                     font-size: 2.25rem;
@@ -1257,16 +1378,40 @@ section.ol-dieticians {
             p {
                 max-width: 100%;
                 line-height: 26px;
+                text-align: justify;
             }
         }
         .services-wrapper > :last-child {
             margin-top: 60px;
         }
     }
+
+
+/*Intro Section*/
+section.ol-intro {
+    .intro-wrapper {
+        .semi-circle-1 {
+            width: 635px;
+    height: 635px;
+        }
+        .semi-circle-2 {
+            width: 850px;
+    height: 850px;
+        }
+        .semi-circle-3 {
+            width: 1000px;
+    height: 1000px;
+        }
+    }
+}
+
+
        /*About Section*/  
 
  .ol-about {
-    max-width: 1680px;
+    span.right-bg {
+        top:-20%;
+    }
     .about-wrapper {
         text-align: center;
         .content {
@@ -1276,10 +1421,18 @@ section.ol-dieticians {
     }
    
 }
+
+/*Dietician Section*/
+
+.description {
+    p {
+        line-height: 32px;
+    }
+}
 /*PrInt Section*/  
 
 .ol-print {
-    max-width: 1680px;
+    
     .ol-print-wrapper {
         padding: 0 20px 0 20px;
         .half-column.right {
@@ -1310,6 +1463,12 @@ section.ol-dieticians {
     }
    
 }
+
+/*Footer Section*/
+.footer-logo-area {
+    padding-right: 3.55rem;
+}
+
 }
 
 
