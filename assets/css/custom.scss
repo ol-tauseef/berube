@@ -701,6 +701,7 @@ line-height: 24px;
     .services-wrapper{
         .title.d-flex {
             align-items: baseline;
+            height: 185px;
         }
         .column-2 {
             margin-left: 70px;
@@ -722,7 +723,7 @@ line-height: 24px;
         font-style: normal;
         font-weight: 300;
         font-size: 1.25rem;
-        line-height: 24px;    
+        line-height: 40px;    
         color: $textColor;
         margin:0;
         max-width: 650px;
@@ -1292,44 +1293,88 @@ border-radius: 1140px;
 
     /*Service Section*/  
 
-    .ol-services {
-        max-width: 1919px;
-        span.service-right-bg {
-            right: 10%;
-        }
-        .services-wrapper {
-           
-            padding: 0 20px;
-            
-            
-            .row-two-column.content {
-                margin: 0;
-                margin-top: 30px;
-            }
-           .column-2 {
-               margin-left: 0;
-           }
-            .half-column {
-               
-                
-                h3.title {
-                    margin: 30px 0;
-                    font-size: 2.25rem;
-                    span.dropcap {
-                        font-size: 4.6rem;
-                        line-height: 3rem;
-                    }
-                }
-            }
-            p {
-                max-width: 100%;
-                line-height: 26px;
-            }
-        }
-        .services-wrapper > :last-child {
-            margin-top: 60px;
+   /*Service Section*/
+   .ol-services {
+    padding: 70px 0 65px 0;
+    position: relative;
+    span.service-left-bg, span.service-right-bg  {
+        position: absolute;
+    }
+    span.service-left-bg {
+        top: -4%;
+        z-index: 2;
+    }
+    span.service-right-bg {
+        right: 0;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        height: 155px;
+    }
+    .row-two-column.content {
+        margin-top: 105px;
+        margin-bottom: 80px;
+    }
+.services-wrapper{
+    .title.d-flex {
+        align-items: baseline;
+        height: 185px;
+    }
+    .column-2 {
+        margin-left: 70px;
+    }
+h3.title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.875rem;
+    line-height: 36px;    
+    color: $textColor;
+    margin-bottom: 45px;
+}
+span.dropcap{
+@include dropcap();
+}
+p{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 40px;    
+    color: $textColor;
+    margin:0;
+    max-width: 650px;
+}
+.rm-button {
+    @include button();
+    max-width: 175px;
+}
+.expert {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 126.5px;
+    .section-title {
+        &::before {
+            content: none;
         }
     }
+    h2.title {
+        font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+margin: 109px 0 26.5px 0;
+
+
+    }
+    p {
+        max-width: 100%;
+        line-height: 40px;
+    }
+}
+}
+}
        /*About Section*/  
 
  .ol-about {
@@ -1477,47 +1522,40 @@ section.ol-hero {
     }
 }
 
-    /*Service Section*/  
-
-    .ol-services {
-       
-        .services-wrapper {
-           
-            padding: 0 20px;
-            
-            
-            .row-two-column.content {
-                margin: 0;
-                margin-top: 30px;
-            }
-           .column-2 {
-               margin-left: 0;
-           }
-            .half-column {
-              
-                max-width: 50%;
-    width: 605px;
-
-                h3.title {
-                    margin: 30px 0;
-                    font-size: 2.25rem;
-                    span.dropcap {
-                        font-size: 4.6rem;
-                        line-height: 3rem;
-                    }
-                }
-            }
-            p {
-                max-width: 100%;
-                line-height: 26px;
-                text-align: justify;
-            }
-        }
-        .services-wrapper > :last-child {
-            margin-top: 60px;
-        }
+/*Service Section*/
+.ol-services {
+     
+    .row-two-column.content {
+        margin-top: 50px;
+    margin-bottom: 50px;
     }
+.services-wrapper{
+    .title.d-flex {
+        height: 158px;
+    }    
+h3.title {    
+    font-size: 1.8rem;    
+}
+span.dropcap{
 
+font-size: 5.5rem;
+ line-height: 6.5rem;
+}
+p {  
+    line-height: 30px;      
+}
+
+.expert {
+    h2.title {
+        margin: 70px 0 26.5px 0;
+    }
+    p {
+       
+        line-height: 30px;
+    }
+}
+}
+}
 
 /*Intro Section*/
 section.ol-intro {
@@ -1611,45 +1649,41 @@ section.ol-intro {
         max-width: 1300px;
     }
 
-    /*Service Section*/  
-
-    .ol-services {
-       
-        .services-wrapper {
-           
-            padding: 0 20px;
-            .section-title {
-                h2.title {
-                    margin-bottom: 30px;
-                }
-            }
-            
-            .row-two-column.content {
-                margin: 0;
-            }
-           .column-2 {
-               margin-left: 0;
-           }
-            .half-column {
-                
-                
-                h3.title {
-                    margin: 30px 0;
-                    font-size: 2rem;
-                    span.dropcap {
-                        font-size: 4.6rem;
-                        line-height: 3rem;
-                    }
-                }
-            }
-            p {
-                max-width: 650px;
-            }
-        }
-        .services-wrapper > :last-child {
-            margin-top: 60px;
-        }
+    /*Service Section*/
+.ol-services {
+     
+    .row-two-column.content {
+        margin-top: 50px;
+    margin-bottom: 50px;
     }
+.services-wrapper{
+    .title.d-flex {
+        height: 145px;
+    }    
+h3.title {    
+    font-size: 1.5rem;    
+}
+span.dropcap{
+
+font-size: 5rem;
+ line-height: 6rem;
+}
+p {  
+    line-height: 30px;      
+}
+
+.expert {
+    h2.title {
+        margin: 50px 0 26.5px 0;
+        font-size: 36px;
+    }
+    p {
+       
+        line-height: 30px;
+    }
+}
+}
+}
        /*About Section*/  
 
  .ol-about {
@@ -1717,46 +1751,42 @@ section.ol-dieticians {
         max-width: 1200px;
     }
 
-    /*Service Section*/  
-
-    .ol-services {
-        
-        .services-wrapper {
-           
-            padding: 0 20px;
-            .section-title {
-                h2.title {
-                    margin-bottom: 30px;
-                }
-            }
-            
-            .row-two-column.content {
-                margin: 0;
-            }
-           .column-2 {
-               margin-left: 0;
-           }
-            .half-column {
-               
-                h3.title {
-                    margin: 30px 0;
-                   
-                    font-size: 1.75rem;
-                    span.dropcap {
-                        display: block;
-                        font-size: 4.5rem;
-                        line-height: 6rem;
-                    }
-                }
-            }
-            p {
-                max-width: 650px;
-            }
-        }
-        .services-wrapper > :last-child {
-            margin-top: 60px;
-        }
+ 
+    /*Service Section*/
+.ol-services {
+     
+    .row-two-column.content {
+        margin-top: 50px;
+    margin-bottom: 50px;
     }
+.services-wrapper{
+    .title.d-flex {
+        height: 145px;
+    }    
+h3.title {    
+    font-size: 1.5rem;    
+}
+span.dropcap{
+
+font-size: 5rem;
+ line-height: 6rem;
+}
+p {  
+    line-height: 30px;      
+}
+
+.expert {
+    h2.title {
+        margin: 50px 0 26.5px 0;
+        font-size: 36px;
+    }
+    p {
+       
+        line-height: 30px;
+    }
+}
+}
+}
        /*About Section*/  
 
  .ol-about {
@@ -1822,47 +1852,50 @@ section.ol-dieticians {
         max-width: 1000px;
     }
 
-
-    /*Service Section*/  
-
-   .ol-services {
-       
-        .services-wrapper {
-           
-            padding: 0 20px;
-            .section-title {
-                h2.title {
-                    margin-bottom: 30px;
-                }
-            }
-            
-            .row-two-column.content {
-                margin: 0;
-            }
-           .column-2 {
-               margin-left: 0;
-           }
-            .half-column {
-             
-                h3.title {
-                    margin: 30px 0;
-                   
-                    font-size: 1.75rem;
-                    span.dropcap {
-                        display: block;
-                        font-size: 4.5rem;
-                        line-height: 6rem;
-                    }
-                }
-            }
-            p {
-                max-width: 650px;
-            }
-        }
-        .services-wrapper > :last-child {
-            margin-top: 60px;
+.ol-header {
+    .main-nav {
+        li {
+            padding: 1.875rem 0.85rem;
         }
     }
+}
+    
+    /*Service Section*/
+.ol-services {
+     
+    .row-two-column.content {
+        margin-top: 50px;
+    margin-bottom: 50px;
+    }
+.services-wrapper{
+    .title.d-flex {
+        height: 120px;
+    }    
+h3.title {    
+    font-size: 1.25rem;    
+    line-height: 30px;
+}
+span.dropcap{
+
+    font-size: 4.5rem;
+    line-height: 4rem;
+}
+p {  
+    line-height: 30px;      
+}
+
+.expert {
+    h2.title {
+        margin: 50px 0 26.5px 0;
+        font-size: 36px;
+    }
+    p {
+       
+        line-height: 30px;
+    }
+}
+}
+}
        /*About Section*/  
 
  .ol-about {
@@ -1944,8 +1977,45 @@ section.ol-dieticians {
 @media(max-width:1024px) {
 
     .container {
-        max-width: 850px;
+        max-width: 900px;
     }
+
+
+.ol-services {
+    .services-wrapper {
+       
+        .row-one-column.expert {
+            margin-top: 30px;
+            margin-bottom: 40px;
+            h2.title {
+                margin: 30px 0 26.5px 0;
+            }
+            p {
+                font-size: 1rem;
+                line-height: 24px;
+            }
+        }
+        span.dropcap {
+            font-size: 2.5rem;
+        }
+        .row-two-column.content {
+            margin-top: 30px !important;
+            margin-bottom: 35px !important;
+        }
+        p.description {
+            font-size: 1rem;
+            line-height: 24px;
+        }
+
+        .title.d-flex {
+            height: 100px;
+            h3.title {
+                font-size: 1.2rem;
+            }
+
+        }
+    }
+}
 
 /*Header Section*/
 
@@ -2117,11 +2187,21 @@ section.ol-dieticians {
             text-align: center;
             padding: 0 20px;
             .row-two-column {
+                text-align: left;
+                h3.title {
+                    text-align: left;
+                }
+            }
+            .title.d-flex {
+                height: 75px;
+            }
+            .row-two-column {
                 flex-direction: column;
                 
             }
             .row-two-column.content {
                 margin: 0;
+                margin-top: 0 !important;
             }
            .column-2 {
                margin-left: 0;
@@ -2247,8 +2327,15 @@ section.ol-dieticians {
         .services-wrapper {
             text-align: center;
             padding: 0 20px;
+           .title.d-flex {
+               margin-bottom: 20px;
+           }
             .row-two-column {
                 flex-direction: column;
+                text-align: left;
+                h3.title {
+                    text-align: left !important;
+                }
                 
             }
             .row-two-column.content {

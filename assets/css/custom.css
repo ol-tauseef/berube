@@ -747,6 +747,7 @@ section.ol-hero .hero-wrapper .container {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  height: 185px;
 }
 
 .ol-services .services-wrapper .column-2 {
@@ -777,7 +778,7 @@ section.ol-hero .hero-wrapper .container {
   font-style: normal;
   font-weight: 300;
   font-size: 1.25rem;
-  line-height: 24px;
+  line-height: 40px;
   color: #595959;
   margin: 0;
   max-width: 650px;
@@ -1462,36 +1463,110 @@ h3.widget-title {
 /*Media Queries*/
 @media (max-width: 1919px) {
   /*Service Section*/
+  /*Service Section*/
   .ol-services {
-    max-width: 1919px;
+    padding: 70px 0 65px 0;
+    position: relative;
+  }
+  .ol-services span.service-left-bg, .ol-services span.service-right-bg {
+    position: absolute;
+  }
+  .ol-services span.service-left-bg {
+    top: -4%;
+    z-index: 2;
   }
   .ol-services span.service-right-bg {
-    right: 10%;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    height: 155px;
   }
-  .ol-services .services-wrapper {
-    padding: 0 20px;
+  .ol-services .row-two-column.content {
+    margin-top: 105px;
+    margin-bottom: 80px;
   }
-  .ol-services .services-wrapper .row-two-column.content {
-    margin: 0;
-    margin-top: 30px;
+  .ol-services .services-wrapper .title.d-flex {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    height: 185px;
   }
   .ol-services .services-wrapper .column-2 {
-    margin-left: 0;
+    margin-left: 70px;
   }
-  .ol-services .services-wrapper .half-column h3.title {
-    margin: 30px 0;
-    font-size: 2.25rem;
+  .ol-services .services-wrapper h3.title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.875rem;
+    line-height: 36px;
+    color: #595959;
+    margin-bottom: 45px;
   }
-  .ol-services .services-wrapper .half-column h3.title span.dropcap {
-    font-size: 4.6rem;
-    line-height: 3rem;
+  .ol-services .services-wrapper span.dropcap {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 7.5rem;
+    color: #7CC24D;
+    margin-right: 10px;
   }
   .ol-services .services-wrapper p {
-    max-width: 100%;
-    line-height: 26px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 40px;
+    color: #595959;
+    margin: 0;
+    max-width: 650px;
   }
-  .ol-services .services-wrapper > :last-child {
-    margin-top: 60px;
+  .ol-services .services-wrapper .rm-button {
+    max-width: 150px;
+    width: 100%;
+    display: block;
+    max-width: 175px;
+  }
+  .ol-services .services-wrapper .rm-button a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    background-color: #373737;
+    padding: 0.8125rem 1.5625rem;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    display: block;
+  }
+  .ol-services .services-wrapper .rm-button a:hover {
+    background-color: #7CC24D;
+  }
+  .ol-services .services-wrapper .expert {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin-bottom: 126.5px;
+  }
+  .ol-services .services-wrapper .expert .section-title::before {
+    content: none;
+  }
+  .ol-services .services-wrapper .expert h2.title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 109px 0 26.5px 0;
+  }
+  .ol-services .services-wrapper .expert p {
+    max-width: 100%;
+    line-height: 40px;
   }
   /*About Section*/
   .ol-about .about-wrapper {
@@ -1603,35 +1678,28 @@ h3.widget-title {
     left: 600px;
   }
   /*Service Section*/
-  .ol-services .services-wrapper {
-    padding: 0 20px;
+  .ol-services .row-two-column.content {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
-  .ol-services .services-wrapper .row-two-column.content {
-    margin: 0;
-    margin-top: 30px;
+  .ol-services .services-wrapper .title.d-flex {
+    height: 158px;
   }
-  .ol-services .services-wrapper .column-2 {
-    margin-left: 0;
+  .ol-services .services-wrapper h3.title {
+    font-size: 1.8rem;
   }
-  .ol-services .services-wrapper .half-column {
-    max-width: 50%;
-    width: 605px;
-  }
-  .ol-services .services-wrapper .half-column h3.title {
-    margin: 30px 0;
-    font-size: 2.25rem;
-  }
-  .ol-services .services-wrapper .half-column h3.title span.dropcap {
-    font-size: 4.6rem;
-    line-height: 3rem;
+  .ol-services .services-wrapper span.dropcap {
+    font-size: 5.5rem;
+    line-height: 6.5rem;
   }
   .ol-services .services-wrapper p {
-    max-width: 100%;
-    line-height: 26px;
-    text-align: justify;
+    line-height: 30px;
   }
-  .ol-services .services-wrapper > :last-child {
-    margin-top: 60px;
+  .ol-services .services-wrapper .expert h2.title {
+    margin: 70px 0 26.5px 0;
+  }
+  .ol-services .services-wrapper .expert p {
+    line-height: 30px;
   }
   /*Intro Section*/
   section.ol-intro .intro-wrapper .semi-circle-1 {
@@ -1695,31 +1763,29 @@ h3.widget-title {
     max-width: 1300px;
   }
   /*Service Section*/
-  .ol-services .services-wrapper {
-    padding: 0 20px;
+  .ol-services .row-two-column.content {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
-  .ol-services .services-wrapper .section-title h2.title {
-    margin-bottom: 30px;
+  .ol-services .services-wrapper .title.d-flex {
+    height: 145px;
   }
-  .ol-services .services-wrapper .row-two-column.content {
-    margin: 0;
+  .ol-services .services-wrapper h3.title {
+    font-size: 1.5rem;
   }
-  .ol-services .services-wrapper .column-2 {
-    margin-left: 0;
-  }
-  .ol-services .services-wrapper .half-column h3.title {
-    margin: 30px 0;
-    font-size: 2rem;
-  }
-  .ol-services .services-wrapper .half-column h3.title span.dropcap {
-    font-size: 4.6rem;
-    line-height: 3rem;
+  .ol-services .services-wrapper span.dropcap {
+    font-size: 5rem;
+    line-height: 6rem;
   }
   .ol-services .services-wrapper p {
-    max-width: 650px;
+    line-height: 30px;
   }
-  .ol-services .services-wrapper > :last-child {
-    margin-top: 60px;
+  .ol-services .services-wrapper .expert h2.title {
+    margin: 50px 0 26.5px 0;
+    font-size: 36px;
+  }
+  .ol-services .services-wrapper .expert p {
+    line-height: 30px;
   }
   /*About Section*/
   .ol-about .about-wrapper {
@@ -1772,32 +1838,29 @@ h3.widget-title {
     max-width: 1200px;
   }
   /*Service Section*/
-  .ol-services .services-wrapper {
-    padding: 0 20px;
+  .ol-services .row-two-column.content {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
-  .ol-services .services-wrapper .section-title h2.title {
-    margin-bottom: 30px;
+  .ol-services .services-wrapper .title.d-flex {
+    height: 145px;
   }
-  .ol-services .services-wrapper .row-two-column.content {
-    margin: 0;
+  .ol-services .services-wrapper h3.title {
+    font-size: 1.5rem;
   }
-  .ol-services .services-wrapper .column-2 {
-    margin-left: 0;
-  }
-  .ol-services .services-wrapper .half-column h3.title {
-    margin: 30px 0;
-    font-size: 1.75rem;
-  }
-  .ol-services .services-wrapper .half-column h3.title span.dropcap {
-    display: block;
-    font-size: 4.5rem;
+  .ol-services .services-wrapper span.dropcap {
+    font-size: 5rem;
     line-height: 6rem;
   }
   .ol-services .services-wrapper p {
-    max-width: 650px;
+    line-height: 30px;
   }
-  .ol-services .services-wrapper > :last-child {
-    margin-top: 60px;
+  .ol-services .services-wrapper .expert h2.title {
+    margin: 50px 0 26.5px 0;
+    font-size: 36px;
+  }
+  .ol-services .services-wrapper .expert p {
+    line-height: 30px;
   }
   /*About Section*/
   .ol-about .about-wrapper {
@@ -1849,33 +1912,34 @@ h3.widget-title {
   .container {
     max-width: 1000px;
   }
+  .ol-header .main-nav li {
+    padding: 1.875rem 0.85rem;
+  }
   /*Service Section*/
-  .ol-services .services-wrapper {
-    padding: 0 20px;
+  .ol-services .row-two-column.content {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
-  .ol-services .services-wrapper .section-title h2.title {
-    margin-bottom: 30px;
+  .ol-services .services-wrapper .title.d-flex {
+    height: 120px;
   }
-  .ol-services .services-wrapper .row-two-column.content {
-    margin: 0;
+  .ol-services .services-wrapper h3.title {
+    font-size: 1.25rem;
+    line-height: 30px;
   }
-  .ol-services .services-wrapper .column-2 {
-    margin-left: 0;
-  }
-  .ol-services .services-wrapper .half-column h3.title {
-    margin: 30px 0;
-    font-size: 1.75rem;
-  }
-  .ol-services .services-wrapper .half-column h3.title span.dropcap {
-    display: block;
+  .ol-services .services-wrapper span.dropcap {
     font-size: 4.5rem;
-    line-height: 6rem;
+    line-height: 4rem;
   }
   .ol-services .services-wrapper p {
-    max-width: 650px;
+    line-height: 30px;
   }
-  .ol-services .services-wrapper > :last-child {
-    margin-top: 60px;
+  .ol-services .services-wrapper .expert h2.title {
+    margin: 50px 0 26.5px 0;
+    font-size: 36px;
+  }
+  .ol-services .services-wrapper .expert p {
+    line-height: 30px;
   }
   /*About Section*/
   .ol-about .about-wrapper {
@@ -1938,7 +2002,35 @@ h3.widget-title {
 
 @media (max-width: 1024px) {
   .container {
-    max-width: 850px;
+    max-width: 900px;
+  }
+  .ol-services .services-wrapper .row-one-column.expert {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .ol-services .services-wrapper .row-one-column.expert h2.title {
+    margin: 30px 0 26.5px 0;
+  }
+  .ol-services .services-wrapper .row-one-column.expert p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .ol-services .services-wrapper span.dropcap {
+    font-size: 2.5rem;
+  }
+  .ol-services .services-wrapper .row-two-column.content {
+    margin-top: 30px !important;
+    margin-bottom: 35px !important;
+  }
+  .ol-services .services-wrapper p.description {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .ol-services .services-wrapper .title.d-flex {
+    height: 100px;
+  }
+  .ol-services .services-wrapper .title.d-flex h3.title {
+    font-size: 1.2rem;
   }
   /*Header Section*/
   /*------------Mobile Menu Open------------*/
@@ -2060,6 +2152,15 @@ h3.widget-title {
     padding: 0 20px;
   }
   .ol-services .services-wrapper .row-two-column {
+    text-align: left;
+  }
+  .ol-services .services-wrapper .row-two-column h3.title {
+    text-align: left;
+  }
+  .ol-services .services-wrapper .title.d-flex {
+    height: 75px;
+  }
+  .ol-services .services-wrapper .row-two-column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2067,6 +2168,7 @@ h3.widget-title {
   }
   .ol-services .services-wrapper .row-two-column.content {
     margin: 0;
+    margin-top: 0 !important;
   }
   .ol-services .services-wrapper .column-2 {
     margin-left: 0;
@@ -2174,11 +2276,18 @@ h3.widget-title {
     text-align: center;
     padding: 0 20px;
   }
+  .ol-services .services-wrapper .title.d-flex {
+    margin-bottom: 20px;
+  }
   .ol-services .services-wrapper .row-two-column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: left;
+  }
+  .ol-services .services-wrapper .row-two-column h3.title {
+    text-align: left !important;
   }
   .ol-services .services-wrapper .row-two-column.content {
     margin: 0;
