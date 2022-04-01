@@ -1,7 +1,40 @@
 /*Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
-/*Font Variable*/
+/*Variable*/
 /*Color Variable*/
+/*Animations*/
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate__fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+/*Defaults*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -53,6 +86,14 @@ body, html {
   width: 50%;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 header, footer, section {
   max-width: 1920px;
   margin: 0 auto;
@@ -85,6 +126,7 @@ h2.title {
 
 /*CSS Start*/
 /*Header Menu*/
+/*------------Mobile Menu Open------------*/
 .ol-mobile-header .ol-logo-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,6 +152,7 @@ h2.title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  cursor: pointer;
 }
 
 .ol-mobile-header .menu span {
@@ -120,6 +163,99 @@ h2.title {
   margin-bottom: 5px;
 }
 
+#mobileMenuDrawer {
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  -webkit-animation: fadeInLeft 0.5s linear;
+          animation: fadeInLeft 0.5s linear;
+}
+
+#mobileMenuDrawer::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  background: #7cc24d;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+#mobileMenuDrawer::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  background: #373737;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+#mobileMenuDrawer .close-menu {
+  position: absolute;
+  right: 20px;
+  background: transparent;
+  top: 20px;
+  font-size: 18px;
+  border: 1px solid #7cc24d;
+  border-radius: 52%;
+  color: #7cc24d;
+}
+
+#mobileMenuDrawer .inner-wrapper {
+  border-bottom-left-radius: 400px;
+  border-bottom-right-radius: 400px;
+  background: white;
+  padding-bottom: 140px;
+  text-align: center;
+}
+
+#mobileMenuDrawer .inner-wrapper .logo {
+  padding: 30px 0;
+}
+
+#mobileMenuDrawer .inner-wrapper ul.mobile-menu {
+  margin: 0;
+  list-style: none;
+}
+
+#mobileMenuDrawer .inner-wrapper ul.mobile-menu li {
+  padding: 18px;
+  width: 90%;
+}
+
+#mobileMenuDrawer .inner-wrapper ul.mobile-menu li a {
+  text-decoration: none;
+  color: #7CC24D;
+  font-size: 18px;
+}
+
+#mobileMenuDrawer .contact-info-wrapper .mail, #mobileMenuDrawer .contact-info-wrapper .call {
+  width: 100%;
+  text-align: center;
+}
+
+#mobileMenuDrawer .contact-info-wrapper .mail img, #mobileMenuDrawer .contact-info-wrapper .call img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 10%;
+}
+
+#mobileMenuDrawer .contact-info-wrapper .mail a, #mobileMenuDrawer .contact-info-wrapper .call a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/*------------Mobile Menu Open------------*/
 .logo-menu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -326,8 +462,8 @@ section.ol-hero .image.half-column .orbit-3 {
   content: "";
   position: absolute;
   border-radius: 1180px;
-  height: 1180px;
-  width: 1180px;
+  height: 1150px;
+  width: 1150px;
   top: 0;
   right: 0;
   bottom: 0;
@@ -345,8 +481,8 @@ section.ol-hero .image.half-column .orbit-3::before {
   background: #7CC24D;
   background: #ffffff !important;
   border-radius: 100px;
-  top: 200px;
-  right: 132px;
+  top: 180px;
+  right: 142px;
 }
 
 section.ol-hero .slider-thumb {
@@ -369,7 +505,7 @@ section.ol-hero .box-nav {
   background: #ffffff;
   height: 60px;
   position: absolute;
-  left: 31%;
+  left: 30.5%;
   bottom: 389px;
   content: "";
   z-index: 3;
@@ -607,6 +743,12 @@ section.ol-hero .hero-wrapper .container {
   margin-bottom: 80px;
 }
 
+.ol-services .services-wrapper .title.d-flex {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
 .ol-services .services-wrapper .column-2 {
   margin-left: 70px;
 }
@@ -699,8 +841,9 @@ section.ol-hero .hero-wrapper .container {
   background: url(../images/intro-bg.png) #f5f5f5;
   padding: 65px 0 0 0;
   background-repeat: no-repeat;
-  background-position: 52% 0;
+  background-position: 15px 15px;
   overflow: hidden;
+  background-size: 9%;
 }
 
 .ol-intro .container {
@@ -1351,9 +1494,6 @@ h3.widget-title {
     margin-top: 60px;
   }
   /*About Section*/
-  .ol-about {
-    max-width: 1919px;
-  }
   .ol-about .about-wrapper {
     text-align: center;
   }
@@ -1369,9 +1509,6 @@ h3.widget-title {
     font-size: 5.25rem;
   }
   /*PrInt Section*/
-  .ol-print {
-    max-width: 1919px;
-  }
   .ol-print .ol-print-wrapper {
     padding: 0 20px 0 20px;
   }
@@ -1554,10 +1691,10 @@ h3.widget-title {
 }
 
 @media (max-width: 1440px) {
-  /*Service Section*/
-  .ol-services {
-    max-width: 1440px;
+  .container {
+    max-width: 1300px;
   }
+  /*Service Section*/
   .ol-services .services-wrapper {
     padding: 0 20px;
   }
@@ -1585,9 +1722,6 @@ h3.widget-title {
     margin-top: 60px;
   }
   /*About Section*/
-  .ol-about {
-    max-width: 1440px;
-  }
   .ol-about .about-wrapper {
     text-align: center;
   }
@@ -1603,9 +1737,6 @@ h3.widget-title {
     font-size: 5.25rem;
   }
   /*PrInt Section*/
-  .ol-print {
-    max-width: 1440px;
-  }
   .ol-print .ol-print-wrapper {
     padding: 0 20px 0 20px;
   }
@@ -1637,10 +1768,10 @@ h3.widget-title {
 }
 
 @media (max-width: 1366px) {
-  /*Service Section*/
-  .ol-services {
-    max-width: 1366px;
+  .container {
+    max-width: 1200px;
   }
+  /*Service Section*/
   .ol-services .services-wrapper {
     padding: 0 20px;
   }
@@ -1669,9 +1800,6 @@ h3.widget-title {
     margin-top: 60px;
   }
   /*About Section*/
-  .ol-about {
-    max-width: 1366px;
-  }
   .ol-about .about-wrapper {
     text-align: center;
   }
@@ -1687,9 +1815,6 @@ h3.widget-title {
     font-size: 5.25rem;
   }
   /*PrInt Section*/
-  .ol-print {
-    max-width: 1366px;
-  }
   .ol-print .ol-print-wrapper {
     padding: 0 20px 0 20px;
   }
@@ -1721,10 +1846,10 @@ h3.widget-title {
 }
 
 @media (max-width: 1280px) {
-  /*Service Section*/
-  .ol-services {
-    max-width: 1280px;
+  .container {
+    max-width: 1000px;
   }
+  /*Service Section*/
   .ol-services .services-wrapper {
     padding: 0 20px;
   }
@@ -1753,9 +1878,6 @@ h3.widget-title {
     margin-top: 60px;
   }
   /*About Section*/
-  .ol-about {
-    max-width: 1280px;
-  }
   .ol-about .about-wrapper {
     text-align: center;
   }
@@ -1771,9 +1893,6 @@ h3.widget-title {
     font-size: 4.25rem;
   }
   /*PrInt Section*/
-  .ol-print {
-    max-width: 1280px;
-  }
   .ol-print .ol-print-wrapper {
     padding: 0 20px 0 20px;
   }
@@ -1804,7 +1923,6 @@ h3.widget-title {
   }
   /*Booking Section*/
   .ol-booking {
-    max-width: 1280px;
     padding: 0 20px;
   }
   .ol-booking h2.title {
@@ -1819,10 +1937,30 @@ h3.widget-title {
 }
 
 @media (max-width: 1024px) {
-  /*Service Section*/
-  .ol-services {
-    max-width: 1024px;
+  .container {
+    max-width: 850px;
   }
+  /*Header Section*/
+  /*------------Mobile Menu Open------------*/
+  #mobileMenuDrawer .inner-wrapper {
+    border-bottom-left-radius: 550px;
+    border-bottom-right-radius: 550px;
+  }
+  #mobileMenuDrawer .inner-wrapper ul.mobile-menu li {
+    padding: 18px;
+    width: 90%;
+  }
+  /*------------Mobile Menu Open------------*/
+  .ol-mobile-header {
+    display: block;
+  }
+  .ol-mobile-header .ol-logo-nav {
+    padding: 15px 0;
+  }
+  .ol-header {
+    display: none;
+  }
+  /*Service Section*/
   .ol-services .services-wrapper {
     padding: 0 20px;
   }
@@ -1869,9 +2007,6 @@ h3.widget-title {
     font-size: 4.25rem;
   }
   /*PrInt Section*/
-  .ol-print {
-    max-width: 1024px;
-  }
   .ol-print .ol-print-wrapper {
     padding: 0 20px 0 20px;
   }
@@ -1902,7 +2037,6 @@ h3.widget-title {
   }
   /*Booking Section*/
   .ol-booking {
-    max-width: 1024px;
     padding: 0 20px;
   }
   .ol-booking h2.title {
@@ -1917,10 +2051,10 @@ h3.widget-title {
 }
 
 @media (max-width: 990px) {
-  /*Service Section*/
-  .ol-services {
-    max-width: 990px;
+  .container {
+    max-width: 750px;
   }
+  /*Service Section*/
   .ol-services .services-wrapper {
     text-align: center;
     padding: 0 20px;
@@ -1957,9 +2091,6 @@ h3.widget-title {
     margin-top: 60px;
   }
   /*About Section*/
-  .ol-about {
-    max-width: 990px;
-  }
   .ol-about .about-wrapper {
     text-align: center;
   }
@@ -2018,7 +2149,6 @@ h3.widget-title {
   }
   /*Booking Section*/
   .ol-booking {
-    max-width: 990px;
     padding: 0 20px;
   }
   .ol-booking h2.title {
@@ -2033,6 +2163,9 @@ h3.widget-title {
 }
 
 @media (max-width: 767px) {
+  .container {
+    max-width: 600px;
+  }
   /*Service Section*/
   .ol-services {
     max-width: 767px;
@@ -2122,9 +2255,6 @@ h3.widget-title {
     margin: 0;
   }
   /*About Section*/
-  .ol-about {
-    max-width: 767px;
-  }
   .ol-about span.right-bg {
     top: -95px;
     right: -10px;
@@ -2184,9 +2314,6 @@ h3.widget-title {
     padding-bottom: 30px;
   }
   /*PrInt Section*/
-  .ol-print {
-    max-width: 767px;
-  }
   .ol-print .ol-print-wrapper {
     padding: 0 20px 0 20px;
   }
@@ -2227,7 +2354,6 @@ h3.widget-title {
   }
   /*Booking Section*/
   .ol-booking {
-    max-width: 767px;
     padding: 0 20px;
   }
   .ol-booking h2.title {
@@ -2242,10 +2368,10 @@ h3.widget-title {
 }
 
 @media (max-width: 640px) {
-  /*Service Section*/
-  .ol-services {
-    max-width: 640px;
+  .container {
+    max-width: 500px;
   }
+  /*Service Section*/
   .ol-services .services-wrapper {
     text-align: center;
     padding: 0 20px;
@@ -2352,9 +2478,6 @@ h3.widget-title {
     margin: 0;
   }
   /*About Section*/
-  .ol-about {
-    max-width: 640px;
-  }
   .ol-about span.right-bg {
     top: -95px;
     right: -10px;
@@ -2372,7 +2495,6 @@ h3.widget-title {
   .ol-dieticians {
     background-position: 100% !important;
     padding: 30px 0 !important;
-    max-width: 640px;
     text-align: center;
     position: relative;
     background-size: cover !important;
@@ -2414,9 +2536,6 @@ h3.widget-title {
     padding-bottom: 30px;
   }
   /*PrInt Section*/
-  .ol-print {
-    max-width: 640px;
-  }
   .ol-print .ol-print-wrapper {
     padding: 0 20px 0 20px;
   }
@@ -2457,7 +2576,6 @@ h3.widget-title {
   }
   /*Booking Section*/
   .ol-booking {
-    max-width: 640px;
     padding: 0 20px;
   }
   .ol-booking h2.title {
@@ -2472,10 +2590,25 @@ h3.widget-title {
 }
 
 @media (max-width: 480px) {
-  /*Service Section*/
-  .ol-services {
-    max-width: 480px;
+  .container {
+    max-width: 100%;
+    padding: 15px 5% !important;
   }
+  /*Mobile Menu*/
+  .inner-wrapper.menu img {
+    width: 250px;
+  }
+  .inner-wrapper.menu ul.mobile-menu li {
+    padding: 16px;
+  }
+  .contact-info-wrapper {
+    margin-top: 20px;
+    overflow-wrap: anywhere;
+  }
+  .contact-info-wrapper .mail a, .contact-info-wrapper .call a {
+    font-size: 16px;
+  }
+  /*Service Section*/
   .ol-services .services-wrapper {
     text-align: center;
     padding: 0 18px;
@@ -2573,9 +2706,6 @@ h3.widget-title {
     margin: 0;
   }
   /*About Section*/
-  .ol-about {
-    max-width: 480px;
-  }
   .ol-about span.right-bg {
     top: -95px;
     right: -10px;
@@ -2593,7 +2723,6 @@ h3.widget-title {
   .ol-dieticians {
     background-position: 100% !important;
     padding: 30px 0 !important;
-    max-width: 480px;
     text-align: center;
     position: relative;
     background-size: cover !important;
@@ -2635,9 +2764,6 @@ h3.widget-title {
     padding-bottom: 30px;
   }
   /*PrInt Section*/
-  .ol-print {
-    max-width: 480px;
-  }
   .ol-print .ol-print-wrapper {
     padding: 0 20px 0 20px;
   }
@@ -2678,7 +2804,6 @@ h3.widget-title {
   }
   /*Booking Section*/
   .ol-booking {
-    max-width: 480px;
     padding: 0 20px;
   }
   .ol-booking h2.title {
@@ -2693,10 +2818,11 @@ h3.widget-title {
 }
 
 @media (max-width: 320px) {
-  /*Service Section*/
-  .ol-services {
-    max-width: 320px;
+  .container {
+    max-width: 100%;
+    padding: 15px 5% !important;
   }
+  /*Service Section*/
   .ol-services .services-wrapper {
     text-align: center;
     padding: 0 15px;
@@ -2793,9 +2919,6 @@ h3.widget-title {
     margin: 0;
   }
   /*About Section*/
-  .ol-about {
-    max-width: 320px;
-  }
   .ol-about span.right-bg {
     top: -95px;
     right: -10px;
@@ -2813,7 +2936,6 @@ h3.widget-title {
   .ol-dieticians {
     background-position: 100% !important;
     padding: 30px 0 !important;
-    max-width: 320px;
     text-align: center;
     position: relative;
     background-size: cover !important;
@@ -2855,9 +2977,6 @@ h3.widget-title {
     padding-bottom: 30px;
   }
   /*PrInt Section*/
-  .ol-print {
-    max-width: 320px;
-  }
   .ol-print .ol-print-wrapper {
     padding: 0 20px 0 20px;
   }
@@ -2898,7 +3017,6 @@ h3.widget-title {
   }
   /*Booking Section*/
   .ol-booking {
-    max-width: 320px;
     padding: 0 20px;
   }
   .ol-booking h2.title {
