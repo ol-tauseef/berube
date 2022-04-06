@@ -948,7 +948,7 @@ border-radius: 1140px;
         background: url('../images/cta-dieticians-bg.png');
         background-repeat: no-repeat;
         background-position: 50% 50%;
-        padding: 85px 0;
+        padding: 68px 0;
         position: relative;
         &::before {
             position: absolute;
@@ -956,7 +956,11 @@ border-radius: 1140px;
     background: #7CC24D;
     width: 100%;
     height: 20px;
-    top: 16px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
         }
     .container {padding: 0;}
     h4.sub-title {
@@ -1649,6 +1653,92 @@ section.ol-intro {
         max-width: 1300px;
     }
 
+/*Hero Section*/
+section.ol-hero {
+    .bullets {
+        left: 480px;
+    }
+    .number-nav {
+        left: 510px;
+    }
+    .hero-wrapper {
+        .row-two-column {
+            .content-area {
+                .content-title-area {
+                    h2.title, h3.title {
+                        font-size: 4.6rem;
+                    }
+
+                } 
+                .slider-content-area {
+                    width: 371px;
+    height: 300px;
+    padding: 25px 34px 34px 34px;
+    h3.title {
+        line-height: 28px;
+    }
+    .rm-button {
+        margin-top: 26px !important;
+    }
+    .box-nav {
+        left: 30.6%;
+bottom: 325px;
+height: 50px;
+ a {
+    padding: 10px;
+ }
+    }
+                } 
+            }
+            .image {
+                .image-wrapper {
+                    img {
+                        width: 90%;
+    display: block;
+    margin: 0 auto;
+                    }
+                    .orbit-1 {
+                        border-radius: 630px;
+    height: 630px;
+    width: 630px;
+    left: -4%;
+    &::before {
+        top: 97px;
+    left: 74px;
+    }
+                    }
+                    .orbit-2 {
+                        border-radius: 750px;
+    height: 750px;
+    width: 750px;
+    left: -14%;
+    &::before  {
+        bottom: 200px;
+    left: 33px;
+    }
+    
+                    }
+                    .orbit-3 {
+                        border-radius: 850px;
+    height: 850px;
+    width: 850px;
+    left:-23%;
+    &::before {
+        top: 128px;
+    right: 107px;
+    }
+                    }
+                
+                }  
+            
+            } 
+        
+        } 
+    
+    } 
+} 
+
+
     /*Service Section*/
 .ol-services {
      
@@ -1741,6 +1831,18 @@ section.ol-dieticians {
     }
    
 }
+
+/*Footer Section*/
+
+.description {
+    p {
+    line-height: 28px;} 
+}
+.copyright {
+    p {font-size: 1.1rem;}
+}
+
+
 }
 
 
@@ -1750,6 +1852,100 @@ section.ol-dieticians {
     .container {
         max-width: 1200px;
     }
+
+    /*Hero Section*/
+section.ol-hero {
+    .bullets {
+        left: 480px;
+    }
+    .number-nav {
+        left: 510px;
+    }
+    .hero-wrapper {
+        .row-two-column {
+            .content-area {
+                
+                .content-title-area {
+                    h2.title, h3.title {
+                        font-size: 4.1rem;
+                        line-height: 90px;
+                    }
+
+                } 
+                .slider-content-area {
+                    width: 340px;
+    height: 290px;
+    padding: 25px 25px 34px 25px;
+    h3.title {
+        line-height: 24px;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    .rm-button {
+        margin-top: 24px !important;
+        a {
+            padding: 0.5125rem 1rem;
+            font-size: 1.2rem;
+        }
+    }
+    .box-nav {
+        left: 31%;
+    bottom: 315px;
+height: 50px;
+ a {
+    padding: 10px;
+ }
+    }
+                } 
+            }
+            .image {
+                .image-wrapper {
+                    img {
+                        width: 90%;
+    display: block;
+    margin: 0 auto;
+                    }
+                    .orbit-1 {
+                        border-radius: 580px;
+                        height: 580px;
+                        width: 580px;
+                        left: -4%;
+    &::before {
+        top: 82px;
+    left: 74px;
+    }
+                    }
+                    .orbit-2 {
+                        border-radius: 690px;
+                        height: 690px;
+                        width: 690px;
+                        left: -14%;
+    &::before  {
+        bottom: 178px;
+    left: 33px;
+    }
+    
+                    }
+                    .orbit-3 {
+                        border-radius: 820px;
+    height: 820px;
+    width: 820px;
+    left: -25%;
+    &::before {
+        top: 119px;
+    right: 107px;
+    }
+                    }
+                
+                }  
+            
+            } 
+        
+        } 
+    
+    } 
+} 
 
  
     /*Service Section*/
@@ -1843,6 +2039,25 @@ section.ol-dieticians {
     }
    
 }
+
+/*Footer Section*/
+
+.footer-logo-area {
+    .logo {
+        margin-bottom: 22px;
+    }
+} 
+.contact p {
+    font-size: 1.1rem;
+}
+.description {
+    p {
+    line-height: 25px;} 
+}
+.copyright {
+    p {font-size: 1rem;}
+}
+
 }
 
 
@@ -1859,7 +2074,109 @@ section.ol-dieticians {
         }
     }
 }
+ 
+ /*Hero Section*/
+ section.ol-hero {
+    .bullets {
+        left: 480px;
+    }
+    .number-nav {
+        left: 510px;
+    }
+    .hero-wrapper {
+        .row-two-column {
+            .content-area {
+                
+                .content-title-area {
+                    h2.title, h3.title {
+                        font-size: 3.75rem;
+    line-height: 80px;
+                    }
+
+                } 
+                .slider-content-area {
+                    width: 340px;
+                    height: 270px;
+                    padding: 26px 10px 20px 10px;
+    h3.title {
+        line-height: 24px;
+        font-size: 1.675rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+    .rm-button {
+        margin-top: 24px !important;
+        a {
+            padding: 0.5125rem 1rem;
+            font-size: 1.2rem;
+        }
+    }
+    .box-nav {
+        left: 37.5%;
+        bottom: 310px;
+    height: 40px;
+img {
+    width: 80%;
+}
+ a {
+    padding: 8px;
+ }
+    }
+                } 
+            }
+            .image {
+                align-self: center;
+                margin-left: 100px;
+                .image-wrapper {
+                    img {
+                        width: 100%;
+    display: block;
+    margin: 0 auto;
+                    }
+                    .orbit-1 {
+                        border-radius: 500px;
+                        height: 500px;
+                        width: 500px;
+                        left: -20%;
+    &::before {
+        top: 72px;
+        left: 60px;
+    }
+                    }
+                    .orbit-2 {
+                        border-radius: 630px;
+    height: 630px;
+    width: 630px;
+    left: -36%;
+    &::before  {
+        bottom: 175px;
+    left: 23px;
+    }
     
+                    }
+                    .orbit-3 {
+                        border-radius: 730px;
+    height: 730px;
+    width: 730px;
+    left: -50%;
+    &::before {
+        top: 52px;
+    right: 160px;
+    }
+                    }
+                
+                }  
+            
+            } 
+        
+        } 
+    
+    } 
+} 
+
+
+
     /*Service Section*/
 .ol-services {
      
@@ -1980,6 +2297,106 @@ section.ol-dieticians {
         max-width: 900px;
     }
 
+/*Hero Section*/
+section.ol-hero {
+    .social {display: none;}
+    .bullets {
+        left: 410px;
+    }
+    .number-nav {
+        left: 438px;
+    }
+    .hero-wrapper {
+        .row-two-column {
+            .content-area {
+                
+                .content-title-area {
+                    h2.title, h3.title {
+                        font-size: 3.25rem;
+    line-height: 80px;
+                    }
+
+                } 
+                .slider-content-area {
+                    width: 322px;
+                    height: 270px;
+                    padding: 26px 10px 20px 10px;
+    h3.title {
+        line-height: 24px;
+        font-size: 1.675rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+    .rm-button {
+        margin-top: 24px !important;
+        a {
+            padding: 0.5125rem 1rem;
+            font-size: 1.2rem;
+        }
+    }
+    .box-nav {
+        left: 37.5%;
+        bottom: 310px;
+    height: 40px;
+img {
+    width: 80%;
+}
+ a {
+    padding: 8px;
+ }
+    }
+                } 
+            }
+            .image {
+                align-self: center;
+                margin-left: 100px;
+                .image-wrapper {
+                    img {
+                        width: 100%;
+    display: block;
+    margin: 0 auto;
+                    }
+                    .orbit-1 {
+                        border-radius: 400px;
+                        height: 400px;
+                        width: 400px;
+                        left: -13%;
+    &::before {
+        top: 75px;
+        left: 30px;
+    }
+                    }
+                    .orbit-2 {
+                        border-radius: 530px;
+    height: 530px;
+    width: 530px;
+    left: -34%;
+    &::before  {
+        bottom: 135px;
+        left: 23px;
+    }
+    
+                    }
+                    .orbit-3 {
+                        border-radius: 630px;
+    height: 630px;
+    width: 630px;
+    left: -50%;
+    &::before {
+        top: 30px;
+        right: 160px;
+    }
+                    }
+                
+                }  
+            
+            } 
+        
+        } 
+    
+    } 
+} 
 
 .ol-services {
     .services-wrapper {
@@ -2179,6 +2596,112 @@ section.ol-dieticians {
         max-width: 750px;
     }
 
+/*Hero Section*/
+section.ol-hero {
+    .social {display: none;}
+    .bullets {
+        left: 410px;
+        bottom: 20px;
+    }
+    .number-nav {
+        left: 438px;
+        bottom: 46px;
+    }
+    .hero-wrapper {
+        .row-two-column {
+            .content-area {
+                
+                .content-title-area {
+                    h2.title, h3.title {
+                        font-size: 2.6rem;
+    line-height: 60px;
+                    }
+
+                } 
+                .slider-content-area {
+                    width: 322px;
+                    height: 270px;
+                    padding: 26px 10px 20px 10px;
+                    margin-top: 90px;
+    h3.title {
+        line-height: 24px;
+        font-size: 1.675rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+    .rm-button {
+        margin-top: 24px !important;
+        a {
+            padding: 0.5125rem 1rem;
+            font-size: 1.2rem;
+        }
+    }
+    .box-nav {
+        left: 35.4%;
+        bottom: 349px;
+        height: 40px;
+img {
+    width: 80%;
+}
+ a {
+    padding: 8px;
+ }
+    }
+                } 
+            }
+            .image {
+                align-self: center;
+                margin-left: 100px;
+                .image-wrapper {
+                    img {
+                        width: 100%;
+    display: block;
+    margin: 0 auto;
+                    }
+                    .orbit-1 {
+                        border-radius: 350px;
+    height: 350px;
+    width: 350px;
+    left: -15%;
+    &::before {
+        top: 90px;
+    left: 12px;
+    }
+                    }
+                    .orbit-2 {
+                        border-radius: 450px;
+    height: 450px;
+    width: 450px;
+    left: -34%;
+    &::before  {
+        bottom: 90px;
+        left: 33px;
+    }
+    
+                    }
+                    .orbit-3 {
+                        border-radius: 550px;
+                        height: 550px;
+                        width: 550px;
+                        left: -52%;
+    &::before {
+        top: 15px;
+        right: 160px;
+    }
+                    }
+                
+                }  
+            
+            } 
+        
+        } 
+    
+    } 
+} 
+
+
+
     /*Service Section*/  
 
    .ol-services {
@@ -2319,6 +2842,117 @@ section.ol-dieticians {
     .container {
         max-width: 600px;
     }
+
+
+/*Hero Section*/
+section.ol-hero {
+    .social {display: none;}
+    .bullets {
+        left: 300px;
+        bottom: 20px;
+    }
+    .number-nav {
+        left: 328px;
+        bottom: 46px;
+    }
+    .hero-wrapper {
+        .row-two-column {
+            .slider-thumb {
+                width: 285px;
+            }
+            .content-area {
+                
+                .content-title-area {
+                    h2.title, h3.title {
+                        font-size: 1.99rem;
+                        line-height: 45px;
+                    }
+
+                } 
+                .slider-content-area {
+                    width: 290px;
+    height: 250px;
+    padding: 26px 14px 20px 14px;
+                    margin-top: 90px;
+    h3.title {
+        line-height: 10px;
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .rm-button {
+        margin-top: 24px !important;
+        a {
+            padding: 0.5rem 0.8rem;
+            font-size: 1.1rem;
+        }
+    }
+    .box-nav {
+        left: 36.8%;
+        bottom: 330px;
+        height: 40px;
+img {
+    width: 80%;
+}
+ a {
+    padding: 8px;
+ }
+    }
+                } 
+            }
+            .image {
+                align-self: center;
+                margin-left: 100px;
+                
+                .image-wrapper {
+                   max-width: 100%;
+                    img {
+                        width: 100%;
+    display: block;
+    margin: 0 auto;
+                    }
+                    .orbit-1 {
+                        border-radius: 270px;
+                        height: 270px;
+                        width: 270px;
+                        left: -17%;
+    &::before {
+        top: 115px;
+        left: -6px;
+    }
+                    }
+                    .orbit-2 {
+                        border-radius: 350px;
+    height: 350px;
+    width: 350px;
+    left: -37%;
+    &::before  {
+        bottom: 65px;
+        left: 26px;
+    }
+    
+                    }
+                    .orbit-3 {
+                        border-radius: 430px;
+                        height: 430px;
+                        width: 430px;
+                        left: -57%;
+    &::before {
+        top: 38px;
+        right: 76px;
+    }
+                    }
+                
+                }  
+            
+            } 
+        
+        } 
+    
+    } 
+} 
+
 
     /*Service Section*/  
 
