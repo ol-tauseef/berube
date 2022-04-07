@@ -254,6 +254,31 @@ width: 90%;
         }
     }
         }
+
+
+
+
+        .drawer-social {
+            a.facebook, a.twitter , a.youtube, a.reddit {
+                display: block;
+                height: 30px;
+                width: 30px;
+                background: url(../images/social-sprite.png);                
+                margin-left: 20px;
+            }
+            a.facebook {
+                
+            }
+            a.twitter {
+                background-position: 33.3%;
+            }
+            a.youtube {
+                background-position: 66.6%;
+            }
+            a.reddit {
+                background-position: 100%;
+            }
+        }
        .contact-info-wrapper {
            .mail, .call {            
         width: 100%;
@@ -511,6 +536,7 @@ margin: 0;
             img {
                 max-width: 100%;
                 display: block;
+                margin: 0 auto;
                
                
             }
@@ -2045,6 +2071,9 @@ section.ol-dieticians {
 .footer-logo-area {
     .logo {
         margin-bottom: 22px;
+        img {
+            width: 300px;
+        }
     }
 } 
 .contact p {
@@ -2052,7 +2081,9 @@ section.ol-dieticians {
 }
 .description {
     p {
-    line-height: 25px;} 
+    line-height: 25px;
+    font-size: 1.1rem;
+} 
 }
 .copyright {
     p {font-size: 1rem;}
@@ -2287,6 +2318,80 @@ section.ol-dieticians {
         } 
     }
 }
+
+
+
+/*Footer Section*/
+
+.footer-wrapper {
+
+    .row-two-column {
+        flex-direction: column;
+        .content-widget-area {
+            width: 100%;
+            nav.footer.section-1 {
+                .footer-nav {
+                    .nav {
+                        justify-content: center;
+                    }
+                }
+            }
+            .section-2 {
+                flex-direction: row;
+                padding: 0 36px;
+                .footer-logo-area {
+                    .logo {
+                        margin-bottom: 22px;
+                        img {
+                            width: 300px;
+                        }
+                    }
+                    .description {
+                        p {
+                        line-height: 25px;
+                        font-size: 1.1rem;
+                    } 
+                    }
+                }
+                
+                .footer-contact-area {
+                    .contact {
+                        p {
+                            font-size: 1.1rem;
+                        }
+                    } 
+                   
+                }
+            }
+
+
+
+
+            }
+           
+        .map {
+            z-index: 1;
+            width: 100%;
+            padding: 3rem 2.25rem 1rem 2.25rem;
+            .map-wrapper {
+                &::after {
+                    padding-bottom: 40%;
+                }
+            }
+            
+        }
+        
+        .copyright {
+            position: unset;
+            p {font-size: 1rem;text-align: center;}
+        }
+
+    }
+    
+
+}
+
+
 
 }
 
@@ -2833,6 +2938,12 @@ section.ol-dieticians {
         }
     }
 }
+
+/*Footer Section*/
+.footer-nav .nav a {
+    font-size: 1.2rem;
+}
+
 }
 
 
@@ -2848,35 +2959,47 @@ section.ol-dieticians {
 section.ol-hero {
     .social {display: none;}
     .bullets {
-        left: 300px;
-        bottom: 20px;
+        display: none;
     }
     .number-nav {
-        left: 328px;
-        bottom: 46px;
+        display: none;
     }
     .hero-wrapper {
         .row-two-column {
+            flex-direction: column;
+    align-items: center;
+    .half-column {
+        width: 90%;
+        margin-bottom: 18%;
+    }
+    .content-title-area {
+        display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+    flex-direction: column;
+    text-align: center;
+
+    }
             .slider-thumb {
-                width: 285px;
+               display: none;
             }
             .content-area {
                 
                 .content-title-area {
                     h2.title, h3.title {
-                        font-size: 1.99rem;
-                        line-height: 45px;
+                        font-size: 3.25rem;
+    line-height: 65px;
+    margin: 0;
                     }
 
                 } 
                 .slider-content-area {
-                    width: 290px;
-    height: 250px;
-    padding: 26px 14px 20px 14px;
-                    margin-top: 90px;
+                    width: 85%;
+                    height: 100%;
+                    margin: 0 auto;
     h3.title {
         line-height: 10px;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
     p {
         font-size: 1rem;
@@ -2889,14 +3012,13 @@ section.ol-hero {
         }
     }
     .box-nav {
-        left: 36.8%;
-        bottom: 330px;
-        height: 40px;
+        left: 67.4%;
+        top: 25.5%;
 img {
     width: 80%;
 }
  a {
-    padding: 8px;
+    padding: 9px;
  }
     }
                 } 
@@ -2904,42 +3026,44 @@ img {
             .image {
                 align-self: center;
                 margin-left: 100px;
+                margin: 0;
                 
                 .image-wrapper {
                    max-width: 100%;
                     img {
-                        width: 100%;
+                        width: 70%;
     display: block;
     margin: 0 auto;
                     }
                     .orbit-1 {
-                        border-radius: 270px;
-                        height: 270px;
-                        width: 270px;
-                        left: -17%;
+                        border-radius: 450px;
+                        height: 450px;
+                        width: 450px;
+                        left: 0%;
+                        display: none;
     &::before {
-        top: 115px;
-        left: -6px;
+        top: 45px;
+    left: 75px;
     }
                     }
                     .orbit-2 {
-                        border-radius: 350px;
-    height: 350px;
-    width: 350px;
-    left: -37%;
+                        border-radius: 500px;
+                        height: 500px;
+                        width: 500px;
+                        left: 0;
     &::before  {
-        bottom: 65px;
-        left: 26px;
+        bottom: 137px;
+        left: 17px;
     }
     
                     }
                     .orbit-3 {
-                        border-radius: 430px;
-                        height: 430px;
-                        width: 430px;
-                        left: -57%;
+                        border-radius: 630px;
+                        height: 630px;
+                        width: 630px;
+                        left: -7%;
     &::before {
-        top: 38px;
+        top: 95px;
         right: 76px;
     }
                     }
@@ -3094,6 +3218,7 @@ img {
         left: 0;       
         margin: 0 auto;
         z-index: -1;
+        opacity: 1;
     }
     
     .ol-dietitians-wrapper {
@@ -3191,6 +3316,128 @@ img {
     .container {
         max-width: 500px;
     }
+
+
+/*Hero Section*/
+section.ol-hero {
+    .social {display: none;}
+    .bullets {
+        display: none;
+    }
+    .number-nav {
+        display: none;
+    }
+    .hero-wrapper {
+        .row-two-column {
+            flex-direction: column;
+    align-items: center;
+    .half-column {
+        width: 85%;
+        margin-bottom: 18%;
+    }
+    .content-title-area {
+        display: flex;
+    justify-content: space-between;
+    margin-bottom: 77px;
+
+    }
+            .slider-thumb {
+               display: none;
+            }
+            .content-area {
+                
+                .content-title-area {
+                    h2.title, h3.title {
+                        font-size: 3rem;
+                        line-height: 65px;
+                        
+                    }
+
+                } 
+                .slider-content-area {
+                    margin: 0;
+                    width: 100%;
+                    height: 100%;
+                    padding: 30px 20px 30px 20px;
+    h3.title {
+        line-height: 10px;
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .rm-button {
+        margin-top: 24px !important;
+        a {
+            padding: 0.5rem 0.8rem;
+            font-size: 1.1rem;
+        }
+    }
+    .box-nav {
+        left: 68.3%;
+        top: 25.6%;
+img {
+    width: 80%;
+}
+ a {
+    padding: 9px;
+ }
+    }
+                } 
+            }
+            .image {
+                align-self: center;
+                margin-left: 100px;
+                margin: 0;
+                
+                .image-wrapper {
+                   max-width: 100%;
+                    img {
+                        width: 90%;
+    display: block;
+    margin: 0 auto;
+                    }
+                    .orbit-1 {
+                        border-radius: 400px;
+    height: 400px;
+    width: 400px;
+    left: 0%;
+    &::before {
+        top: 32px;
+    left: 75px;
+    }
+                    }
+                    .orbit-2 {
+                        border-radius: 470px;
+                        height: 470px;
+                        width: 470px;
+                        left: -6%;
+    &::before  {
+        bottom: 119px;
+        left: 20px;
+    }
+    
+                    }
+                    .orbit-3 {
+                        border-radius: 570px;
+                        height: 570px;
+                        width: 570px;
+                        left: -17%;
+    &::before {
+        top: 85px;
+        right: 69px;
+    }
+                    }
+                
+                }  
+            
+            } 
+        
+        } 
+    
+    } 
+}     
+
 
     /*Service Section*/  
 
@@ -3347,6 +3594,7 @@ img {
         left: 0;       
         margin: 0 auto;
         z-index: -1;
+        opacity: 1;
     }
     
     .ol-dietitians-wrapper {
@@ -3467,11 +3715,139 @@ img {
     }
 }
 
+/*Hero Section*/
+section.ol-hero {
+    .social {display: none;}
+    .bullets {
+        display: none;
+    }
+    .number-nav {
+        display: none;
+    }
+    .hero-wrapper {
+        .row-two-column {
+            flex-direction: column;
+    align-items: center;
+    .half-column {
+        width: 90%;
+        margin-bottom: 18%;
+    }
+    .content-title-area {
+        display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
 
+    }
+            .slider-thumb {
+               display: none;
+            }
+            .content-area {
+                
+                .content-title-area {
+                    h2.title, h3.title {
+                        font-size: 2rem;
+                        line-height: 50px;
+                    
+                        
+                    }
+
+                } 
+                .slider-content-area {
+                    margin: 0;
+                    width: 100%;
+                    height: 100%;
+    h3.title {
+        line-height: 10px;
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .rm-button {
+        margin-top: 24px !important;
+        a {
+            padding: 0.5rem 0.8rem;
+            font-size: 1.1rem;
+        }
+    }
+    .box-nav {
+        left: 70.5%;
+        top: 23.6%;
+img {
+    width: 80%;
+}
+ a {
+    padding: 9px;
+ }
+    }
+                } 
+            }
+            .image {
+                align-self: center;
+                margin-left: 100px;
+                margin: 0;
+                
+                .image-wrapper {
+                   max-width: 100%;
+                    img {
+                        width: 70%;
+    display: block;
+    margin: 0 auto;
+                    }
+                    .orbit-1 {
+                        border-radius: 320px;
+                        height: 320px;
+                        width: 320px;
+                        left: 0%;
+    &::before {
+        top: 40px;
+            left: 40px;
+    }
+                    }
+                    .orbit-2 {
+                        border-radius: 350px;
+    height: 350px;
+    width: 350px;
+    left: -1%;
+    &::before  {
+        bottom: 119px;
+    left: 0px;
+    }
+    
+                    }
+                    .orbit-3 {
+                        border-radius: 450px;
+    height: 450px;
+    width: 450px;
+    left: -9%;
+
+    &::before {
+        top: 68px;
+    right: 50px 
+    }
+                    }
+                
+                }  
+            
+            } 
+        
+        } 
+    
+    } 
+}     
     /*Service Section*/  
 
    .ol-services {
-        
+    span.service-left-bg {
+        top: -3%;
+        img  {
+            width: 120px;
+        }
+    }
         .services-wrapper {
             text-align: center;
             padding: 0 18px;
@@ -3617,6 +3993,7 @@ img {
         left: 0;       
         margin: 0 auto;
         z-index: -1;
+        opacity: 1;
     }
     
     .ol-dietitians-wrapper {
@@ -3721,13 +4098,153 @@ img {
     max-width: 100%;
     padding: 15px 5% !important;
 }
+
+/*Hero Section*/
+section.ol-hero {
+    .social {display: none;}
+    .bullets {
+        display: none;
+    }
+    .number-nav {
+        display: none;
+    }
+    .hero-wrapper {
+        .row-two-column {
+            flex-direction: column;
+    align-items: center;
+    .half-column {
+        width: 90%;
+        margin-bottom: 18%;
+    }
+    .content-title-area {
+        display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    }
+            .slider-thumb {
+               display: none;
+            }
+            .content-area {
+                
+                .content-title-area {
+                    h2.title, h3.title {
+                        font-size: 1.8rem;
+                        
+                    }
+
+                } 
+                .slider-content-area {
+                    margin: 0;
+                    width: 100%;
+                    height: 100%;
+    h3.title {
+        line-height: 10px;
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+    .rm-button {
+        margin-top: 15px !important;
+        max-width: 120px;
+        a {
+            padding: 2px 0;
+            font-size: 1rem;
+        }
+    }
+    .box-nav {
+        left: 67%;
+    top: 27.3%;
+    height: 29px;
+img {
+    width: 70%;
+}
+ a {
+    padding: 4px;
+ }
+    }
+                } 
+            }
+            .image {
+                align-self: center;
+                margin-left: 100px;
+                margin: 0;
+                
+                .image-wrapper {
+                   max-width: 100%;
+                    img {
+                        width: 70%;
+    display: block;
+    margin: 0 auto;
+                    }
+                    .orbit-1 {
+                        border-radius: 220px;
+    height: 220px;
+    width: 220px;
+    left: -1%;
+    &::before {
+        top: 18px;
+        left: 36px;
+        width: 10px;
+        height: 10px;
+    }
+                    }
+                    .orbit-2 {
+                        border-radius: 240px;
+                        height: 240px;
+                        width: 240px;
+                        left: 0%;
+    &::before  {
+        bottom: 75px;
+    left: 2px;
+    width: 10px;
+    height: 10px;
+    }
+    
+                    }
+                    .orbit-3 {
+                          border-radius: 300px;
+                        height: 300px;
+                        width: 300px;
+                        left: -8%;
+    &::before {
+        top: 68px;
+    right: 15px;
+    width: 10px;
+    height: 10px;
+    }
+                    }
+                
+                }  
+            
+            } 
+        
+        } 
+    
+    } 
+}     
+
     /*Service Section*/  
 
    .ol-services {
-        
+    span.service-left-bg {
+        top: -1.5%;
+        img {
+            width: 80px;
+        }
+    }
         .services-wrapper {
             text-align: center;
             padding: 0 15px;
+            .title.d-flex h3.title {
+                font-size: 1.1rem;
+            }
             .row-two-column {
                 flex-direction: column;
                 
@@ -3747,6 +4264,7 @@ img {
                 h3.title {
                     margin-bottom: 30px;
                     text-align: center;
+                    line-height: 20px;
                     span.dropcap {
                         display: block;
                     }
@@ -3866,6 +4384,7 @@ img {
         left: 0;       
         margin: 0 auto;
         z-index: -1;
+        opacity: 1;
     }
     
     .ol-dietitians-wrapper {
