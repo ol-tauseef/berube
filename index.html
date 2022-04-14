@@ -78,14 +78,13 @@
                 <nav>
                 <div class="main-nav">
                     <ul class="nav d-flex">
-                        <li><a class="current" href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Interns</a></li>
-                        <li><a href="">Resources</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a class="current" href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="interns.html">Interns</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
-
                 </div>
                 </nav>
             </div>
@@ -111,28 +110,19 @@
                         <h3 class="title">START NOW!</h3>
                         <p>Are you ready to feel stronger and have more energy???</p><p>Having a nutrition plan tailored to your nutritional needs is the first step!</p>
                         <div class="rm-button"><a href="#">Learn More</a></div>
-                        <div class="box-nav d-flex">
-                            <div class="left-nav"><a href="#"><img src="./assets/images/left-nav.png" alt="nav-left"></a></div>
-                            <div class="right-nav"><a href="#"><img src="./assets/images/right-nav.png" alt="nav-right"></a></div>
-                        </div>
+                       
                     </div>
                     <div class="slider-content-wrapper">
                         <h3 class="title">START NOW!</h3>
                         <p>Are you ready to feel stronger and have more energy???</p><p>Having a nutrition plan tailored to your nutritional needs is the first step!</p>
                         <div class="rm-button"><a href="#">Learn More</a></div>
-                        <div class="box-nav d-flex">
-                            <div class="left-nav"><a href="#"><img src="./assets/images/left-nav.png" alt="nav-left"></a></div>
-                            <div class="right-nav"><a href="#"><img src="./assets/images/right-nav.png" alt="nav-right"></a></div>
-                        </div>
+                        
                     </div>
                     <div class="slider-content-wrapper">
                         <h3 class="title">START NOW!</h3>
                         <p>Are you ready to feel stronger and have more energy???</p><p>Having a nutrition plan tailored to your nutritional needs is the first step!</p>
                         <div class="rm-button"><a href="#">Learn More</a></div>
-                        <div class="box-nav d-flex">
-                            <div class="left-nav"><a href="#"><img src="./assets/images/left-nav.png" alt="nav-left"></a></div>
-                            <div class="right-nav"><a href="#"><img src="./assets/images/right-nav.png" alt="nav-right"></a></div>
-                        </div>
+                       
                     </div>
                 </div>
                 </div>
@@ -151,14 +141,10 @@
                        
                 </div>
                 <div class="slider-thumb d-flex">
-                    <!--<div class="thumb-img d-flex">
-                        <img src="./assets/images/thumb-1.png" alt="thumb-1">
-                        <img src="./assets/images/thumb-2.png" alt="thumb-2">
-                    </div>-->
-
-                    <img src="./assets/images/thumb-1.png" alt="thumb-1" width="97" height="90">
-                    <img src="./assets/images/thumb-1.png" alt="thumb-1" width="97" height="90">
-                    <img src="./assets/images/thumb-1.png" alt="thumb-1" width="97" height="90">
+                   
+                    <img src="./assets/images/thumb-1.png" alt="thumb-1" width="130" height="120">
+                    <img src="./assets/images/thumb-2.png" alt="thumb-2" width="130" height="120">
+                    <img src="./assets/images/thumb-1.png" alt="thumb-1" width="130" height="120">
 
 
                 </div>
@@ -194,7 +180,7 @@
 
 
 
-    <!--<section class="ol-hero">
+   <!-- <section class="ol-hero">
         <div class="hero-wrapper">
             <div class="container row-two-column">
                 <div class="content-area half-column">
@@ -501,20 +487,23 @@
     $('.slider-thumb').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
+        asNavFor: '.orbit-slide',
+        autoplay:true,
+        autoplaySpeed:2000,
     });
     $('.orbit-slide').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
         cssEase: 'linear',
-        //autoplay:true,
-        //autoplaySpeed:2000
+        asNavFor: '.slider-content-area',
+        
     });
     $('.slider-content-area').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay:true,
-        autoplaySpeed:2000
+        
     });
 
     var bullets = document.querySelectorAll('.custom-bullets');
